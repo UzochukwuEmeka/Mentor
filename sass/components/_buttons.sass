@@ -1,0 +1,50 @@
+@import ../utils/variables
+
+.primary-button
+  padding: 6px 10px
+  background: $primary-color
+  border: 0
+  outline: 0
+  color: #fff
+  border-radius: .5rem
+  font-size: .9rem
+  margin: 20px 0
+  box-shadow: 0 2px 8px #ccb5f7
+  display: inline-block 
+  text-align: center
+  cursor: pointer
+  transition: .25s transform
+  border: 2px solid transparent
+  &:hover
+    transform: scale(.98)
+
+.secondary-button
+  @extend .primary-button
+  border: 2px solid $primary-color
+  background: #fff
+  color: $primary-color
+  box-shadow: none
+
+.time-xx
+  display: inline-block
+  border-radius: .25rem
+  color: #fff
+  background: $secondary-color
+  padding: 7px 14px
+  font-size: .86rem
+
+.time-xy
+  @extend .time-xx
+  background: #c9c8c8
+  color: #333
+
+.mentor-btn-01
+  border-radius: 1rem
+  background: $primary-color
+  color: #fff
+  padding: 2px 14px
+  font-size: 1.2rem
+
+.mentor-btn-02
+  @extend .mentor-btn-01
+  background: $secondary-color

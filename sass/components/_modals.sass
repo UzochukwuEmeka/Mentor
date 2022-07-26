@@ -1,0 +1,34 @@
+@import ../utils/variables
+
+.modal-header
+  border: 0
+
+.modal-content
+  @extend .modal-header
+
+.modal-footer
+  @extend .modal-header
+
+// Edit Contact Modal
+
+#edit-contact
+  .modal-dialog
+    max-width: 900px
+
+    .modal-body
+      .input-email
+        color: #bdbbbb
+
+        .text-field
+          margin-bottom: 8px
+
+        p
+          font-size: .96rem
+
+      .form-select
+        border: 1px solid #333
+        margin-top: 8px
+        margin-bottom: 20px
+        border-color: 0
+        width: 400px
+        padding: 16px 20px

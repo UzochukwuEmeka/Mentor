@@ -1,0 +1,148 @@
+@import ../utils/variables
+
+@mixin shadow-1()
+  box-shadow: 0 6px 8px #c0c0c0
+
+@mixin shadow-2()
+  box-shadow: 0 0 8px #e9e9e9
+
+@mixin shadow-3()
+  box-shadow: 0 6px 14px #979797
+
+@mixin radius-1()
+  border-radius: .25rem
+
+@mixin radius-2()
+  border-radius: .5rem
+
+// Arrows
+.arrow-right
+  color: $primary-color
+  font-size: .96rem
+
+.arrow-left
+  @extend .arrow-right
+
+// Profile Card 1
+.profile-card-1
+  background: #fdf2df
+  width: 260px
+  padding: 14px 24px
+  @include shadow-1()
+  @include radius-2()
+
+  $size: 60px
+
+  .img
+    overflow: hidden
+    width: $size
+    height: $size
+    border-radius: 50%
+  .name
+    font-weight: 600
+  .name, .title
+    font-size: .96rem
+  .ratings
+    color: $secondary-color
+
+// Profile Card 1
+.profile-card-2
+  @extend .profile-card-1
+
+// Event Card
+.event-card
+  background: #f3f3f3
+  width: 240px
+  padding: 10px
+  @include radius-1()
+  @include shadow-1()
+
+  .img
+    overflow: hidden
+    border-radius: .25rem
+
+  .body
+    color: $gray-color-01
+
+// Program Card
+.program-card
+  width: $card-width-01
+  background: #f3e3fa
+  padding: 12px 20px 12px 12px
+  @include radius-1()
+  @include shadow-2()
+
+  .title
+    p
+      font-weight: 500
+
+  .body
+    color: $gray-color-01
+
+  $size: 26px
+
+  .footer
+    .con-img
+      .img
+        overflow: hidden
+        border-radius: 50%
+        width: $size
+        height: $size
+
+    p
+      font-size: .94rem
+
+// Task Card
+.task-card
+  width: 260px
+  background: #f3f3f3
+  padding: 12px
+  @include radius-2()
+
+  .title
+    p
+      font-size: .76rem
+      text-decoration: underline
+
+    .button
+      background: $primary-color
+      color: #fff
+      font-size: .8rem
+      padding: 0px 12px
+      border-radius: 1rem
+
+  .body p
+    font-size: .96rem
+    text-decoration: underline
+
+// Goal Card
+.goal-card
+  background: #f3f3f3
+  width: 240px
+  padding: 12px
+  @include shadow-2()
+
+  .header
+    p
+      font-weight: 500
+
+  .footer
+    p
+      font-size: .8rem
+
+    .status-btn-1
+      font-size: .8rem
+      color: #fff
+      background: #33aa57
+      padding: 2px 8px
+      border-radius: 1rem
+
+    .status-btn-2
+      @extend .status-btn-1
+      background: $secondary-color
+
+    .status-btn-3
+      @extend .status-btn-1
+      background: #e02323
+
+

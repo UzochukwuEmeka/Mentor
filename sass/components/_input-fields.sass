@@ -1,0 +1,27 @@
+@import ../utils/variables
+
+.text-field
+  border: 1px solid #333
+  padding: 7px 14px
+  border-radius: .4rem
+  margin-bottom: 20px
+  margin-top: 8px
+
+  input
+    border: 0
+    width: 100%
+    padding: 10px
+    outline: none
+    transition: .6s
+    &:focus
+      padding-left: 24px
+
+.password-field
+  @extend .text-field
+  display: flex
+  align-items: center
+  i
+    color: $primary-color
+    font-size: 1.2rem
+  input
+    margin: 0 8px

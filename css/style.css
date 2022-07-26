@@ -51,22 +51,26 @@
   background: #FFA51E;
 }
 
-.text-field, .password-field {
+.text-field, .password-field, select.select-field {
   border: 1px solid #333;
   padding: 7px 14px;
   border-radius: 0.4rem;
   margin-bottom: 20px;
   margin-top: 8px;
 }
-.text-field input, .password-field input {
+.text-field input, .password-field input, select.select-field input {
   border: 0;
   width: 100%;
   padding: 10px;
   outline: none;
   transition: 0.6s;
 }
-.text-field input:focus, .password-field input:focus {
+.text-field input:focus, .password-field input:focus, select.select-field input:focus {
   padding-left: 24px;
+}
+
+select.select-field {
+  padding: 18px;
 }
 
 .password-field {
@@ -205,7 +209,7 @@
 #edit-contact .modal-dialog .modal-body .input-email {
   color: #bdbbbb;
 }
-#edit-contact .modal-dialog .modal-body .input-email .text-field, #edit-contact .modal-dialog .modal-body .input-email .password-field {
+#edit-contact .modal-dialog .modal-body .input-email .text-field, #edit-contact .modal-dialog .modal-body .input-email select.select-field, #edit-contact .modal-dialog .modal-body .input-email .password-field {
   margin-bottom: 8px;
 }
 #edit-contact .modal-dialog .modal-body .input-email p {

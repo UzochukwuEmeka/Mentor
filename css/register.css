@@ -239,6 +239,247 @@ p {
   color: #8d8d8d;
 }
 
+.primary-button, .secondary-button {
+  padding: 6px 10px;
+  background: #734BBA;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px #ccb5f7;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s transform;
+  border: 2px solid transparent;
+}
+.primary-button:hover, .secondary-button:hover {
+  transform: scale(0.98);
+}
+
+.secondary-button {
+  border: 2px solid #734BBA;
+  background: #fff;
+  color: #734BBA;
+  box-shadow: none;
+}
+
+.time-xx, .time-xy {
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #FFA51E;
+  padding: 7px 14px;
+  font-size: 0.86rem;
+}
+
+.time-xy {
+  background: #c9c8c8;
+  color: #333;
+}
+
+.mentor-btn-01, .mentor-btn-02 {
+  border-radius: 1rem;
+  background: #734BBA;
+  color: #fff;
+  padding: 2px 14px;
+  font-size: 1.2rem;
+}
+
+.mentor-btn-02 {
+  background: #FFA51E;
+}
+
+.text-field, select.select-field, .password-field {
+  border: 1px solid #333;
+  padding: 7px 14px;
+  border-radius: 0.4rem;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+.text-field input, select.select-field input, .password-field input {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  transition: 0.6s;
+}
+.text-field input:focus, select.select-field input:focus, .password-field input:focus {
+  padding-left: 24px;
+}
+
+select.select-field {
+  padding: 18px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+}
+.password-field i {
+  color: #734BBA;
+  font-size: 1.2rem;
+}
+.password-field input {
+  margin: 0 8px;
+}
+
+.arrow-right, .arrow-left {
+  color: #734BBA;
+  font-size: 0.96rem;
+}
+
+.profile-card-1, .profile-card-2 {
+  background: #fdf2df;
+  width: 260px;
+  padding: 14px 24px;
+  box-shadow: 0 6px 8px #c0c0c0;
+  border-radius: 0.5rem;
+}
+.profile-card-1 .img, .profile-card-2 .img {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.profile-card-1 .name, .profile-card-2 .name {
+  font-weight: 600;
+}
+.profile-card-1 .name, .profile-card-2 .name, .profile-card-1 .title, .profile-card-2 .title {
+  font-size: 0.96rem;
+}
+.profile-card-1 .ratings, .profile-card-2 .ratings {
+  color: #FFA51E;
+}
+
+.event-card {
+  background: #f3f3f3;
+  width: 240px;
+  padding: 10px;
+  border-radius: 0.25rem;
+  box-shadow: 0 6px 8px #c0c0c0;
+}
+.event-card .img {
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+.event-card .body {
+  color: #686565;
+}
+
+.program-card {
+  width: 250px;
+  background: #f3e3fa;
+  padding: 12px 20px 12px 12px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 8px #e9e9e9;
+}
+.program-card .title p {
+  font-weight: 500;
+}
+.program-card .body {
+  color: #686565;
+}
+.program-card .footer .con-img .img {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}
+.program-card .footer p {
+  font-size: 0.94rem;
+}
+
+.task-card {
+  width: 260px;
+  background: #f3f3f3;
+  padding: 12px;
+  border-radius: 0.5rem;
+}
+.task-card .title p {
+  font-size: 0.76rem;
+  text-decoration: underline;
+}
+.task-card .title .button {
+  background: #734BBA;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0px 12px;
+  border-radius: 1rem;
+}
+.task-card .body p {
+  font-size: 0.96rem;
+  text-decoration: underline;
+}
+
+.goal-card {
+  background: #f3f3f3;
+  width: 240px;
+  padding: 12px;
+  box-shadow: 0 0 8px #e9e9e9;
+}
+.goal-card .header p {
+  font-weight: 500;
+}
+.goal-card .footer p {
+  font-size: 0.8rem;
+}
+.goal-card .footer .status-btn-1, .goal-card .footer .status-btn-2, .goal-card .footer .status-btn-3 {
+  font-size: 0.8rem;
+  color: #fff;
+  background: #33aa57;
+  padding: 2px 8px;
+  border-radius: 1rem;
+}
+.goal-card .footer .status-btn-2 {
+  background: #FFA51E;
+}
+.goal-card .footer .status-btn-3 {
+  background: #e02323;
+}
+
+.modal-header, .modal-content, .modal-footer {
+  border: 0;
+}
+
+#edit-contact .modal-dialog {
+  max-width: 900px;
+}
+#edit-contact .modal-dialog .modal-body .input-email {
+  color: #bdbbbb;
+}
+#edit-contact .modal-dialog .modal-body .input-email .text-field, #edit-contact .modal-dialog .modal-body .input-email select.select-field, #edit-contact .modal-dialog .modal-body .input-email .password-field {
+  margin-bottom: 8px;
+}
+#edit-contact .modal-dialog .modal-body .input-email p {
+  font-size: 0.96rem;
+}
+#edit-contact .modal-dialog .modal-body .form-select {
+  border: 1px solid #333;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-color: 0;
+  width: 400px;
+  padding: 16px 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+p {
+  margin: 0;
+}
+
+.grey-color-01 {
+  color: #8d8d8d;
+}
+
 .main-container {
   position: relative;
 }
@@ -283,4 +524,17 @@ p {
 .main-container .con-card .cards .right .body h2 {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.main-container .con-card .cards {
+  height: auto;
+  max-width: 740px;
+}
+.main-container .con-card .cards .body form .con-selector .secondary-button {
+  color: #FFA51E;
+  border-color: #FFA51E;
+}
+.main-container .con-card .cards .body form .con-selector .secondary-button.active {
+  background: #FFA51E;
+  color: #fff;
 }

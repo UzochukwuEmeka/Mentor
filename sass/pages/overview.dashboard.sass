@@ -1,0 +1,143 @@
+@import ../utils/index
+
+.primary-button,
+.secondary-button
+  font-size: 1.2rem
+
+// Dashboard Container 
+.main-container
+  .row
+    height: 100vh
+    background: #EDEDED
+
+    .con-sidebar-left,
+    .con-sidebar-right,
+    .con-dashboard
+      height: 98vh
+      width: 100%
+      border-radius: $card-radius-03
+
+    // Left Sidebar
+    .con-sidebar-left
+      background: $primary-color
+      padding: 60px 40px
+
+      // Header
+      .header
+        color: #fff
+
+        .icon i
+          font-size: 2.6rem
+
+      // Navigation List
+      ul
+        li
+          margin-bottom: 2.2rem
+          font-size: 16px
+          font-weight: 400
+          color: #fff
+          display: flex
+          align-items: center
+
+          .icon
+            margin-right: .6rem
+
+        li.active
+          color: $secondary-color
+
+    // Right Sidebar
+    .con-sidebar-right
+      background: #fff
+      padding: 60px 20px
+
+      // Profile Section 
+      .profile-section
+        h1
+          font-size: 1.6rem
+          font-weight: 400
+          color: $gray-color-01
+
+        h2
+          font-size: 1.2rem
+
+        .profile-header
+
+          .img
+            height: 40px
+            width: 40px
+            overflow: hidden
+            border-radius: 50%
+
+      // Task Section
+      .task-section
+        h1
+          font-size: 1.2rem
+
+        .task-list
+          height: 26vh
+          overflow-x: hidden
+          overflow-y: auto
+
+          .task-card
+            width: 98%
+
+    // Dashboard
+    .con-dashboard
+      background: #fff
+
+      .dashboard
+        padding: 60px 44px
+
+        // Dashboard Header
+        .con-header
+          .title
+            font-size: 24px
+            font-weight: 500
+            margin-bottom: 1.6rem
+
+          p
+            margin-bottom: 1.6rem
+
+        // Dashboard Body
+        .dashboard-section
+          height: 70.2vh
+          overflow-x: hidden
+          overflow-y: auto
+          &::-webkit-scrollbar
+            display: none
+
+          &
+            -ms-overflow-style: none
+            scrollbar-width: none
+
+          // Program Section
+          .sections
+            margin-bottom: 30px
+
+            // Header
+            .header
+              margin-bottom: 20px
+              h1
+                font-weight: 500
+                font-size: 18px
+
+            // Program List
+            .con-list
+              width: 100%
+              overflow-x: auto
+              overflow-y: hidden
+
+              &::-webkit-scrollbar
+                display: none
+
+              &
+                -ms-overflow-style: none
+                scrollbar-width: none
+
+              .list
+                width: 1100px
+                padding-bottom: 20px
+                padding-left: 4px
+
+                .con-card
+                  margin-right: 20px

@@ -263,8 +263,128 @@ h1, h2, h3, h4 {
   color: #8d8d8d;
 }
 
-.heading {
-  color: #734BBA;
+.primary-button,
+.secondary-button {
+  font-size: 1.2rem;
+}
+
+.main-container .row {
+  height: 100vh;
+  background: #EDEDED;
+}
+.main-container .row .con-sidebar-left,
+.main-container .row .con-sidebar-right,
+.main-container .row .con-dashboard {
+  height: 98vh;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.main-container .row .con-sidebar-left {
+  background: #734BBA;
+  padding: 60px 40px;
+}
+.main-container .row .con-sidebar-left .header {
+  color: #fff;
+}
+.main-container .row .con-sidebar-left .header .icon i {
+  font-size: 2.6rem;
+}
+.main-container .row .con-sidebar-left ul li {
+  margin-bottom: 2.2rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.main-container .row .con-sidebar-left ul li .icon {
+  margin-right: 0.6rem;
+}
+.main-container .row .con-sidebar-left ul li.active {
+  color: #FFA51E;
+}
+.main-container .row .con-sidebar-right {
+  background: #fff;
+  padding: 60px 20px;
+}
+.main-container .row .con-sidebar-right .profile-section h1 {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
+  color: #6A6A6A;
+}
+.main-container .row .con-sidebar-right .profile-section h2 {
+  font-size: 1.2rem;
+}
+.main-container .row .con-sidebar-right .profile-section .profile-header .img {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.main-container .row .con-sidebar-right .task-section h1 {
+  font-size: 1.2rem;
+}
+.main-container .row .con-sidebar-right .task-section .task-list {
+  height: 26vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.main-container .row .con-sidebar-right .task-section .task-list .task-card {
+  width: 98%;
+}
+.main-container .row .con-dashboard {
+  background: #fff;
+}
+.main-container .row .con-dashboard .dashboard {
+  padding: 60px 44px;
+}
+.main-container .row .con-dashboard .dashboard .con-header .title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.main-container .row .con-dashboard .dashboard .con-header p {
+  margin-bottom: 1.6rem;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section {
+  height: 70.2vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section::-webkit-scrollbar {
+  display: none;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections {
+  margin-bottom: 30px;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .header {
+  margin-bottom: 20px;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .header h1 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .con-list {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .con-list::-webkit-scrollbar {
+  display: none;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .con-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .con-list .list {
+  width: 1100px;
+  padding-bottom: 20px;
+  padding-left: 4px;
+}
+.main-container .row .con-dashboard .dashboard .dashboard-section .sections .con-list .list .con-card {
+  margin-right: 20px;
 }

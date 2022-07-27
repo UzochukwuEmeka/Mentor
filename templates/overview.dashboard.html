@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/overview.dashboard.css">
+  <title>Mentor Community - Overview</title>
+</head>
+
+<body>
+  <div class="main-container">
+
+    <!-- Dashboard Container -->
+    <div class="con-container container">
+      <div class="row">
+
+        <!-- Left Sidebar -->
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="con-sidebar-left">
+
+            <!-- Header -->
+            <div class="header d-flex align-items-center justify-content-start">
+              <div class="icon pe-2">
+                <i class="fa-solid fa-m"></i>
+              </div>
+            </div>
+
+            <!-- Navigation List -->
+            <ul class="mt-5">
+              <a href="">
+                <li class="active">
+                  <div class="icon">
+                    <i class="fa-solid fa-gauge"></i>
+                  </div>
+                  Overview
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  Programmes
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  Mentors
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-calendar"></i>
+                  </div>
+                  Events
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  Goals
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="col-7 d-flex align-items-center justify-content-center">
+          <div class="con-dashboard">
+            <div class="dashboard">
+
+              <!-- Header -->
+              <div class="con-header">
+                <h1 class="title">
+                  Welcome
+
+                  <!-- UserName -->
+                  <span id="-person-user-name">James</span>
+                </h1>
+
+                <p class="grey-color-01">What would you like to do today?</p>
+              </div>
+
+              <!-- Dashboard Body -->
+              <div class="dashboard-section">
+
+                <!-- Sections -->
+                <!-- Program Section -->
+                <div class="program-section sections">
+
+                  <!-- Header -->
+                  <div class="header d-flex align-items-center justify-content-between">
+                    <h1>
+                      My Programmes
+                      (<span id="person-user-program">5</span>)
+                    </h1>
+
+                    <div class="arrow-right">
+                      View all
+                      <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </div>
+                  </div>
+
+                  <!-- Program List -->
+                  <div class="con-program con-list">
+                    <div class="list d-flex align-items-center">
+
+                      <div class="program-card con-card">
+                        <div class="title d-flex justify-content-between">
+                          <p>Programme 1</p>
+                          <div class="arrow-right">
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                          </div>
+                        </div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, ut?
+                        </div>
+                        <div class="footer d-flex align-items-center">
+                          <div class="con-img me-2 d-flex align-items-center">
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                          </div>
+                          <p>3+ Mentors</p>
+                        </div>
+                      </div>
+
+                      <div class="program-card con-card">
+                        <div class="title d-flex justify-content-between">
+                          <p>Programme 1</p>
+                          <div class="arrow-right">
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                          </div>
+                        </div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, ut?
+                        </div>
+                        <div class="footer d-flex align-items-center">
+                          <div class="con-img me-2 d-flex align-items-center">
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                          </div>
+                          <p>3+ Mentors</p>
+                        </div>
+                      </div>
+
+                      <div class="program-card con-card">
+                        <div class="title d-flex justify-content-between">
+                          <p>Programme 1</p>
+                          <div class="arrow-right">
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                          </div>
+                        </div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, ut?
+                        </div>
+                        <div class="footer d-flex align-items-center">
+                          <div class="con-img me-2 d-flex align-items-center">
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                          </div>
+                          <p>3+ Mentors</p>
+                        </div>
+                      </div>
+
+                      <div class="program-card con-card">
+                        <div class="title d-flex justify-content-between">
+                          <p>Programme 1</p>
+                          <div class="arrow-right">
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                          </div>
+                        </div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, ut?
+                        </div>
+                        <div class="footer d-flex align-items-center">
+                          <div class="con-img me-2 d-flex align-items-center">
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                            <div class="img">
+                              <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                            </div>
+                          </div>
+                          <p>3+ Mentors</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+
+                <!-- Mentor Section -->
+                <div class="program-section sections">
+
+                  <!-- Header -->
+                  <div class="header d-flex align-items-center justify-content-between">
+                    <h1>
+                      My Mentors
+                      (<span id="person-user-mentor">5</span>)
+                    </h1>
+
+                    <div class="arrow-right">
+                      View all
+                      <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </div>
+                  </div>
+
+                  <!-- Mentor List -->
+                  <div class="con-mentor con-list">
+                    <div class="list d-flex align-items-center">
+
+                      <div class="profile-card-1 con-card">
+                        <div class="d-flex mb-4">
+                          <div class="img">
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                              alt="">
+                          </div>
+                          <div class="ms-3">
+                            <div class="name">John Doe</div>
+                            <div class="title">Senior Marketer</div>
+                            <div class="ratings">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrow-right">
+                          View Profile
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                      <div class="profile-card-1 con-card">
+                        <div class="d-flex mb-4">
+                          <div class="img">
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                              alt="">
+                          </div>
+                          <div class="ms-3">
+                            <div class="name">John Doe</div>
+                            <div class="title">Senior Marketer</div>
+                            <div class="ratings">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrow-right">
+                          View Profile
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                      <div class="profile-card-1 con-card">
+                        <div class="d-flex mb-4">
+                          <div class="img">
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                              alt="">
+                          </div>
+                          <div class="ms-3">
+                            <div class="name">John Doe</div>
+                            <div class="title">Senior Marketer</div>
+                            <div class="ratings">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrow-right">
+                          View Profile
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                      <div class="profile-card-1 con-card">
+                        <div class="d-flex mb-4">
+                          <div class="img">
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                              alt="">
+                          </div>
+                          <div class="ms-3">
+                            <div class="name">John Doe</div>
+                            <div class="title">Senior Marketer</div>
+                            <div class="ratings">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrow-right">
+                          View Profile
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+
+                <!-- Event Section -->
+                <div class="program-section sections">
+
+                  <!-- Header -->
+                  <div class="header d-flex align-items-center justify-content-between">
+                    <h1>
+                      Recommended Events
+                    </h1>
+
+                    <div class="arrow-right">
+                      View All
+                      <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </div>
+                  </div>
+
+                  <!-- Event List -->
+                  <div class="con-event con-list">
+                    <div class="list d-flex align-items-center">
+
+                      <div class="event-card con-card">
+                        <div class="img mb-2">
+                          <img
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="">
+                        </div>
+                        <div class="title">Event 1</div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="arrow-right">
+                          View
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                      <div class="event-card con-card">
+                        <div class="img mb-2">
+                          <img
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="">
+                        </div>
+                        <div class="title">Event 1</div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="arrow-right">
+                          View
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                      <div class="event-card con-card">
+                        <div class="img mb-2">
+                          <img
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="">
+                        </div>
+                        <div class="title">Event 1</div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="arrow-right">
+                          View
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                      <div class="event-card con-card">
+                        <div class="img mb-2">
+                          <img
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="">
+                        </div>
+                        <div class="title">Event 1</div>
+                        <div class="body my-2">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="arrow-right">
+                          View
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-3 d-flex align-items-center justify-content-center">
+          <div class="con-sidebar-right">
+
+            <!-- Profile Section -->
+            <div class="profile-section">
+              <div class="profile-header d-flex align-items-center justify-content-between mb-4">
+                <h2>Profile</h2>
+                <div class="img">
+                  <img
+                    src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>Goals attained:</h2>
+                <h1>
+                  <span id="goal-done" style="color: #27AE60;">3</span>/
+                  <span id="goal-total">26</span>
+                </h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Mentors:</h2>
+                <h1 id="number-of-mentor">5</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Programmes</h2>
+                <h1 id="number-of-program">5</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>Scheduled Meetings:</h2>
+                <h1 id="schedule-meet">3</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between">
+                <button class="primary-button px-3">
+                  View Profile
+                  <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button>
+
+                <div class="secondary-button">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Task Section -->
+            <div class="task-section">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h1>
+                  Tasks (
+                  <span id="number-of-task">
+                    12
+                  </span>
+                  )
+                </h1>
+
+                <div class="secondary-button">
+                  View All
+                </div>
+              </div>
+
+              <div>
+
+                <div class="task-list">
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

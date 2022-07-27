@@ -17,16 +17,40 @@
 <body>
   <div class="main-container">
 
-    <!-- Dashboard Container -->
+    <!-- Navbar -->
+    <div class="main-navbar d-lg-none">
+      <div class="con-navbar d-flex align-items-center justify-content-between px-4">
+
+        <div class="con-menu" id="first-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="con-logo">
+          <div class="icon">
+            <i class="fa-solid fa-m"></i>
+          </div>
+        </div>
+
+        <div class="con-profile">
+          <div class="img profile-dp">
+            <img
+              src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
     <div class="con-container container">
       <div class="row">
 
         <!-- Left Sidebar -->
-        <div class="col-2 d-flex align-items-center justify-content-center">
+        <div class="col-2 d-none d-lg-flex align-items-center justify-content-center">
           <div class="con-sidebar-left">
 
             <!-- Header -->
-            <div class="header d-flex align-items-center justify-content-start">
+            <div class="con-logo header d-flex align-items-center justify-content-start">
               <div class="icon pe-2">
                 <i class="fa-solid fa-m"></i>
               </div>
@@ -79,7 +103,7 @@
         </div>
 
         <!-- Dashboard -->
-        <div class="col-7 d-flex align-items-center justify-content-center">
+        <div class="col-12 col-md-8 col-lg-7 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
           <div class="con-dashboard">
             <div class="dashboard">
 
@@ -471,14 +495,14 @@
         </div>
 
         <!-- Right Sidebar -->
-        <div class="col-3 d-flex align-items-center justify-content-center">
+        <div class="col-12 col-md-4 col-lg-3 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
           <div class="con-sidebar-right">
 
             <!-- Profile Section -->
             <div class="profile-section">
               <div class="profile-header d-flex align-items-center justify-content-between mb-4">
                 <h2>Profile</h2>
-                <div class="img">
+                <div class="img profile-dp">
                   <img
                     src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
                     alt="">
@@ -584,6 +608,80 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Sidebar -->
+  <div class="con-nav-sidebar d-lg-none">
+    <div class="nav-sidebar">
+      <div class="sidebar">
+
+        <div class="item first">
+          <ul class="mt-5">
+            <a href="">
+              <li class="active">
+                <div class="icon">
+                  <i class="fa-solid fa-gauge"></i>
+                </div>
+                Overview
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                Programmes
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                Mentors
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-calendar"></i>
+                </div>
+                Events
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Goals
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="item second">
+          <ul class="">
+            <a href="">
+              <li class="active">
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Logout
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Change Password
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
     </div>

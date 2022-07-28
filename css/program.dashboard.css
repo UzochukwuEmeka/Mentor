@@ -557,3 +557,14 @@ body {
     height: 26vh;
   }
 }
+.program-card {
+  width: 100%;
+}
+
+.main-container .con-container .row .con-dashboard .dashboard .dashboard-section {
+  height: 80vh;
+  padding: 0 2px;
+}
+.main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections {
+  margin-bottom: 50px;
+}

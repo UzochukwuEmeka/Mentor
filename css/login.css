@@ -224,6 +224,43 @@ select.select-field {
   padding: 16px 20px;
 }
 
+.con-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  color: #888;
+}
+.con-pagination .left, .con-pagination .right {
+  color: #734BBA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.con-pagination .left.active, .con-pagination .right.active {
+  color: #888;
+}
+.con-pagination .dir {
+  padding: 8px 14px;
+  border-radius: 0.5rem;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.con-pagination .dir:hover {
+  background: #734BBA;
+  color: #fff !important;
+}
+.con-pagination .con-count {
+  width: 140px;
+}
+.con-pagination .con-count .count {
+  color: #734BBA;
+  font-weight: 500;
+}
+.con-pagination .con-count .count.active {
+  color: #888;
+}
+
 img {
   width: 100%;
   height: 100%;

@@ -64,6 +64,8 @@ body
             color: #fff
             display: flex
             align-items: center
+            &:hover
+              color: $secondary-color
 
             .icon
               margin-right: .6rem
@@ -223,6 +225,28 @@ body
 
 .con-nav-sidebar.active
   display: flex
+
+// Drop Down
+.dropdown .dropdown-menu
+  border: 0
+  border-radius: $card-radius-02
+  box-shadow: 0 0 16px #bbbbbb
+
+
+// Modals
+.con-modal .modal .modal-dialog
+  max-width: 900px
+
+  .modal-content
+    padding: 14px 12px
+
+    .modal-body
+      .task-card
+        width: 100%
+
+    .modal-footer
+      justify-content: flex-start
+
 
 // Media Queries
 

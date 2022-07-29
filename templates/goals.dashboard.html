@@ -382,11 +382,23 @@
                   <i class="fa-solid fa-arrow-right ms-2"></i>
                 </button>
 
-                <div class="secondary-button">
-                  <i class="fa-solid fa-gear"></i>
+                <!-- Drop Down -->
+                <div class="dropdown dropstart">
+                  <div class="secondary-button" id="gear-setting" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                  </div>
+
+                  <ul class="dropdown-menu" aria-labelledby="gear-setting">
+                    <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./change-password.html">Change Password</a></li>
+                  </ul>
+
                 </div>
               </div>
             </div>
+
+
 
             <!-- Task Section -->
             <div class="task-section">
@@ -399,7 +411,7 @@
                   )
                 </h1>
 
-                <div class="secondary-button">
+                <div class="secondary-button" data-bs-toggle="modal" data-bs-target="#show-tasks">
                   View All
                 </div>
               </div>
@@ -528,6 +540,141 @@
       </div>
     </div>
   </div>
+
+    <!-- Modals -->
+    <div class="con-modal">
+      <div class="modal fade" id="show-tasks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Tasks</h5>
+            </div>
+            <div class="modal-body">
+              <div class="con-row">
+                <div class="row">
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row my-lg-4">
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="task-card">
+                      <div class="title d-flex justify-content-between">
+                        <p>12 Jan</p>
+                        <div class="button d-flex align-items-center">Mentor Request</div>
+                      </div>
+                      <div class="body mt-1">
+                        <p>James Okoye sent you a request</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="secondary-button px-3" data-bs-dismiss="modal">
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

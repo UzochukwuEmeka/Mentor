@@ -203,6 +203,10 @@ select.select-field {
   border: 0;
 }
 
+.text-field, select.select-field, .password-field {
+  width: 400px;
+}
+
 #edit-contact .modal-dialog {
   max-width: 900px;
 }

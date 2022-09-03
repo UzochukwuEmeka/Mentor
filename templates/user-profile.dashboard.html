@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/user-profile.dashboard.css">
+  <title>Mentor Community - My Profile</title>
+</head>
+
+<body>
+  <div class="main-container">
+
+    <!-- Navbar -->
+    <div class="main-navbar d-lg-none">
+      <div class="con-navbar d-flex align-items-center justify-content-between px-4">
+
+        <div class="con-menu" id="first-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="con-logo">
+          <div class="icon">
+            <i class="fa-solid fa-m"></i>
+          </div>
+        </div>
+
+        <div class="con-profile">
+          <div class="img profile-dp">
+            <img
+              src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="con-container container">
+      <div class="main-row row">
+
+        <!-- Left Sidebar -->
+        <div class="col-2 d-none d-lg-flex align-items-center justify-content-center">
+          <div class="con-sidebar-left">
+
+            <!-- Header -->
+            <div class="con-logo header d-flex align-items-center justify-content-start">
+              <div class="icon pe-2">
+                <i class="fa-solid fa-m"></i>
+              </div>
+            </div>
+
+            <!-- Navigation List -->
+            <ul class="mt-5">
+              <a href="./overview.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-gauge"></i>
+                  </div>
+                  Overview
+                </li>
+              </a>
+              <a href="./program.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  Programmes
+                </li>
+              </a>
+              <a href="./mentor.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  Mentors
+                </li>
+              </a>
+              <a href="./event.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-calendar"></i>
+                  </div>
+                  Events
+                </li>
+              </a>
+              <a href="./goals.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  Goals
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="col-12 col-md-8 col-lg-7 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
+          <div class="con-dashboard">
+            <!-- Section A -->
+            <div class="section-a">
+              <div class="header mb-5 mb-md-4">
+                <h2>My Profile</h2>
+              </div>
+              <div class="body row">
+                <!-- Left -->
+                <div class="left col-12 col-md-6">
+                  <div class="d-flex d-md-block d-lg-flex">
+                    <div class="user-dp">
+                      <img
+                        src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        alt="">
+                    </div>
+                    <div class="ms-3 ms-md-0 ms-lg-4 mt-md-3 mt-lg-0">
+                      <div class="user-name">
+                        <h2>James Konan</h2>
+                      </div>
+                      <div class="user-role d-flex align-items-center mb-3 mt-1">
+                        <div class="button d-flex align-items-center">
+                          <i class="fa-solid fa-user"></i>
+                          Mentee
+                        </div>
+                        <h2>LvI. 2</h2>
+                      </div>
+                      <div class="user-title">
+                        <h3>Content Writer</h3>
+                        <p>
+                          <i class="fa-solid fa-anchor"></i>
+                          Comms Department
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="right col-12 col-md-6 d-lg-flex justify-content-end mt-4 mt-md-0">
+                  <div class="context">
+                    <div class="heading d-flex align-items-center justify-content-between mb-3">
+                      <h2>4.5 Ratings</h2>
+                      <div>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="con-card d-flex align-items-center justify-content-between">
+                      <div class="card-1">
+                        <h1>
+                          5
+                        </h1>
+                        <p>
+                          Mentors
+                        </p>
+                      </div>
+                      <div class="card-1 ms-md-3 ms-lg-0">
+                        <h1>
+                          5
+                        </h1>
+                        <p>
+                          Programmes
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section B -->
+            <div class="section-b">
+              <div class="row-01">
+                <div>
+                  <div class="header">
+                    <h2>Interest</h2>
+                    <button class="secondary-button px-3" data-bs-toggle="modal" data-bs-target="#edit-interest">
+                      <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                    </button>
+                  </div>
+                  <div class="body"></div>
+                </div>
+              </div>
+              <div class="row-02"></div>
+              <div class="row-03"></div>
+              <div class="row-04"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-12 col-md-4 col-lg-3 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
+          <div class="con-sidebar-right">
+
+            <!-- Profile Section -->
+            <div class="profile-section">
+              <div class="profile-header d-flex align-items-center justify-content-between mb-4">
+                <h2>Profile</h2>
+                <div class="img profile-dp">
+                  <img
+                    src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>Goals attained:</h2>
+                <h1>
+                  <span id="goal-done" style="color: #27AE60;">3</span>/
+                  <span id="goal-total">26</span>
+                </h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Mentors:</h2>
+                <h1 id="number-of-mentor">5</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Programmes</h2>
+                <h1 id="number-of-program">5</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>Scheduled Meetings:</h2>
+                <h1 id="schedule-meet">3</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between">
+                <button class="primary-button px-3">
+                  <i class="fa-solid fa-lock me-2"></i>
+                  Change Password
+                </button>
+
+                <a href="../index.html">
+                  <div class="secondary-button">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+            <!-- Task Section -->
+            <div class="task-section">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h1>
+                  Tasks (
+                  <span id="number-of-task">
+                    12
+                  </span>
+                  )
+                </h1>
+
+                <div class="secondary-button" data-bs-toggle="modal" data-bs-target="#show-tasks">
+                  View All
+                </div>
+              </div>
+
+              <div>
+
+                <div class="task-list">
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Sidebar -->
+  <div class="con-nav-sidebar d-lg-none">
+    <div class="nav-sidebar">
+      <div class="sidebar">
+
+        <div class="item first">
+          <ul class="mt-5">
+            <a href="./overview.dashboard.html">
+              <li class="active">
+                <div class="icon">
+                  <i class="fa-solid fa-gauge"></i>
+                </div>
+                Overview
+              </li>
+            </a>
+            <a href="./program.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                Programmes
+              </li>
+            </a>
+            <a href="./mentor.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                Mentors
+              </li>
+            </a>
+            <a href="./event.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-calendar"></i>
+                </div>
+                Events
+              </li>
+            </a>
+            <a href="./goals.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Goals
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="item second">
+          <ul class="">
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Logout
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Change Password
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="con-modal">
+
+    <!-- Tasks Modal -->
+    <div class="modal fade" id="show-tasks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tasks</h5>
+          </div>
+          <div class="modal-body">
+            <div class="con-row">
+              <div class="row">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row my-lg-4">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="secondary-button px-3" data-bs-dismiss="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interest Modal -->
+    <div class="modal fade" id="edit-interest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Interest</h5>
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button class="primary-button px-3" data-bs-dismiss="modal">
+              Save
+            </button>
+
+            <button class="secondary-button px-3 ms-3" data-bs-dismiss="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Contact Modal -->
+    <div class="modal fade" id="edit-contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-3">
+          <div class="modal-header mt-3">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Details</h5>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="d-lg-flex justify-content-between">
+                <div class="input-email">
+                  <label for="text-field">Email Address</label>
+                  <div class="text-field" id="text-field">
+                    <input type="text" placeholder="example@gmail.com" disabled>
+                  </div>
+                  <p>This is not editable</p>
+                </div>
+
+                <div>
+                  <label for="text-field">Street Number</label>
+                  <div class="text-field" id="text-field">
+                    <input type="text" placeholder="Enter Street Number">
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-lg-flex justify-content-between my-3">
+                <div>
+                  <label for="text-field">Contact Address</label>
+                  <div class="text-field" id="text-field">
+                    <input type="text" placeholder="Enter your current address">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="text-field">LGA</label>
+                  <select class="form-select">
+                    <option selected>Select LGA</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="d-lg-flex justify-content-between">
+                <div>
+                  <label for="text-field">State</label>
+                  <select class="form-select">
+                    <option selected>Select State of Residence</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button class="primary-button px-3 me-2">
+              Save
+            </button>
+            <button class="secondary-button px-3" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

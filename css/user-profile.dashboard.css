@@ -583,3 +583,94 @@ body {
     height: 26vh;
   }
 }
+.main-container .con-container .row .con-dashboard .section-a {
+  background: #FFF9E2;
+  padding: 40px 20px;
+}
+.main-container .con-container .row .con-dashboard .section-a .header h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-dp {
+  height: 115px;
+  width: 115px;
+  border: 3px solid #fff;
+  border-radius: 80px;
+  overflow: hidden;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-name h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-role {
+  gap: 10px;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-role .button {
+  background: #27AE60;
+  border-radius: 20px;
+  padding: 3px 10px;
+  height: 23px;
+  color: #fff;
+  gap: 4px;
+  font-size: 12px;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-role h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6A6A6A;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-title h3 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #6A6A6A;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .left .user-title p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context {
+  width: 216px;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context .heading h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context .heading .rating {
+  color: #FFA51E;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context .heading .rating i {
+  font-size: 0.8rem;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context .card-1 {
+  width: 97px;
+  height: 97px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context .card-1 h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #734BBA;
+}
+.main-container .con-container .row .con-dashboard .section-a .body .right .context .card-1 p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.main-container .con-container .row .con-dashboard .section-b {
+  padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+  .main-container .con-container .row .con-dashboard .section-a {
+    padding: 40px 60px;
+  }
+}

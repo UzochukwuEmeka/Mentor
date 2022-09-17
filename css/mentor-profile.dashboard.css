@@ -321,7 +321,7 @@ h1, h2, h3, h4 {
 
 .breadcrumb {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .breadcrumb:not(last-child) {
   color: #734BBA;
@@ -601,6 +601,9 @@ body {
   width: 100%;
 }
 
+.main-container .con-container .row .con-dashboard .dashboard .arrow-left {
+  font-size: 1.2rem;
+}
 .main-container .con-container .row .con-dashboard .dashboard .con-section {
   margin-right: 0;
   margin-left: 0;

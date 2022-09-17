@@ -292,8 +292,9 @@ a:hover {
   color: inherit;
 }
 
-ul {
+ul, ol {
   padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -316,6 +317,14 @@ h1, h2, h3, h4 {
   width: 40px;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.breadcrumb {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.breadcrumb:not(last-child) {
+  color: #734BBA;
 }
 
 body {
@@ -583,6 +592,14 @@ body {
     height: 26vh;
   }
 }
+.font-01 {
+  font-size: 1.2rem;
+}
+
+.disabled-color {
+  color: #888;
+}
+
 .main-container .con-container .row .con-dashboard .section-a {
   background: #FFF9E2;
   padding: 40px 20px;
@@ -666,11 +683,27 @@ body {
   line-height: 18px;
 }
 .main-container .con-container .row .con-dashboard .section-b {
-  padding: 40px 20px;
+  padding: 10px 20px;
+}
+.main-container .con-container .row .con-dashboard .section-b .row-01 .body ul li {
+  padding: 8px 16px;
+  border-radius: 0.6rem;
+  background: #734BBA;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.main-container .con-container .row .con-dashboard .section-b .title {
+  color: #FFA51E;
 }
 
 @media (min-width: 768px) {
   .main-container .con-container .row .con-dashboard .section-a {
     padding: 40px 60px;
+  }
+  .main-container .con-container .row .con-dashboard .section-b {
+    padding: 0px 60px;
+  }
+  .main-container .con-container .row .con-dashboard .section-b .row-01 .body ul li {
+    margin-bottom: 0;
   }
 }

@@ -15,6 +15,13 @@
   overflow: hidden
   border-radius: 50%
 
+.breadcrumb
+  margin: 0
+  font-size: .9rem
+  
+  &:not(last-child)
+    color: $primary-color
+
 @mixin tablets($class, $value)
   @media (min-width: 992px)
     $class: $value

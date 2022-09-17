@@ -1,5 +1,11 @@
 @import overview.dashboard
 
+.font-01
+  font-size: 1.2rem
+
+.disabled-color
+  color: #888
+
 .main-container
   .con-container
     .row
@@ -98,10 +104,22 @@
 
         // SectionB
         .section-b
-          padding: 40px 20px
+          padding: 10px 20px
+
+          .row-01
+            .body
+              ul
+                li
+                  padding: 8px 16px
+                  border-radius: .6rem
+                  background: $primary-color
+                  color: #fff
+                  margin-bottom: 20px 
+
+          .title
+              color: $secondary-color
 
 .con-modal
-
 
 // Media Queries
 
@@ -124,3 +142,12 @@
               .user-role
 
               .user-title
+
+          .section-b
+            padding: 0px 60px
+
+            .row-01
+              .body
+                ul
+                  li
+                    margin-bottom: 0 

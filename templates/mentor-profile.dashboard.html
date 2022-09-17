@@ -10,8 +10,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/event.dashboard.css">
-  <title>Mentor Community - Events</title>
+  <link rel="stylesheet" href="../css/mentor-profile.dashboard.css">
+  <title>Mentor Community - About Programmes</title>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                 </li>
               </a>
               <a href="./program.dashboard.html">
-                <li>
+                <li class="active">
                   <div class="icon">
                     <i class="fa-solid fa-clock"></i>
                   </div>
@@ -83,7 +83,7 @@
                 </li>
               </a>
               <a href="./event.dashboard.html">
-                <li class="active">
+                <li>
                   <div class="icon">
                     <i class="fa-solid fa-calendar"></i>
                   </div>
@@ -107,168 +107,230 @@
           <div class="con-dashboard">
             <div class="dashboard">
 
-              <!-- Header -->
-              <div class="con-header d-lg-flex align-items-center justify-content-between mb-3">
-                <h1 class="title">
-                  Events
-                </h1>
+              <!-- Dashboard Header -->
+              <div class="con-header">
+                <div class="first d-flex align-items-center gap-5">
+
+                  <a href="./about-program.dashboard.html">
+                    <div class="arrow-left">
+                      <i class="fa-solid fa-arrow-left me-2"></i>
+                      Back
+                    </div>
+                  </a>
+
+                  <div class="con-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./program.dashboard.html">Programme</a></li>
+                        <li class="breadcrumb-item"><a href="./about-program.dashboard.html">About Programme</a></li>
+                        <li class="breadcrumb-item"><a href="./mentor.dashboard.html">Mentor</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">View Profile</li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="second mt-4">
+                  <h1 class="title">
+                    Mentor Profile
+                  </h1>
+                </div>
+
               </div>
 
               <!-- Dashboard Body -->
               <div class="dashboard-section">
 
                 <!-- Sections -->
-                <!-- Section A -->
-                <div class="program-section sections">
 
-                  <!-- List -->
-                  <div class="con-program">
-                    <div class="list">
+                <div class="con-section row">
+                  <!-- Section A -->
+                  <div class="col-12 col-lg-8">
+                    <div class="section-a">
 
-                      <div class="row mb-lg-5">
+                      <div class="d-flex align-items-start justify-content-between">
 
-                        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                          <div class="event-card">
-                            <div class="img mb-2">
+                        <div class="profile mb-4">
+                          <div class="d-flex">
+                            <div class="img">
                               <img
-                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                                 alt="">
                             </div>
-                            <div class="title">Event 1</div>
-                            <div class="body my-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                            <div class="arrow-right">
-                              View
-                              <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                            <div class="ms-3">
+                              <div class="name">John Doe</div>
+                              <div class="title">Senior Marketer</div>
+                              <div class="ratings mt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                              </div>
                             </div>
                           </div>
                         </div>
 
-                        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                          <div class="event-card">
-                            <div class="img mb-2">
-                              <img
-                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                alt="">
-                            </div>
-                            <div class="title">Event 1</div>
-                            <div class="body my-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                            <div class="arrow-right">
-                              View
-                              <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                          <div class="event-card">
-                            <div class="img mb-2">
-                              <img
-                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                alt="">
-                            </div>
-                            <div class="title">Event 1</div>
-                            <div class="body my-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                            <div class="arrow-right">
-                              View
-                              <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>
-                          </div>
+                        <div class="connect-btn">
+                          <button class="primary-button px-3" data-bs-toggle="modal" data-bs-target="#connect-mentor">
+                            Connect
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                          </button>
                         </div>
                       </div>
 
-                      <div class="row mb-lg-5">
-
-                        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                          <div class="event-card">
-                            <div class="img mb-2">
-                              <img
-                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                alt="">
-                            </div>
-                            <div class="title">Event 1</div>
-                            <div class="body my-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                            <div class="arrow-right">
-                              View
-                              <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>
-                          </div>
+                      <div class="d-flex gap-2 mb-5">
+                        <div class="mentor-btn-01">
+                          <i class="fa-solid fa-user me-1"></i>
+                          5 Mentors
                         </div>
 
-                        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                          <div class="event-card">
-                            <div class="img mb-2">
-                              <img
-                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                alt="">
-                            </div>
-                            <div class="title">Event 1</div>
-                            <div class="body my-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                            <div class="arrow-right">
-                              View
-                              <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                          <div class="event-card">
-                            <div class="img mb-2">
-                              <img
-                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                alt="">
-                            </div>
-                            <div class="title">Event 1</div>
-                            <div class="body my-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                            <div class="arrow-right">
-                              View
-                              <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>
-                          </div>
+                        <div class="mentor-btn-02">
+                          <i class="fa-solid fa-user me-1"></i>
+                          5 Mentees
                         </div>
                       </div>
 
-                      <div class="d-flex align-items-center justify-content-center">
-                        <div class="con-pagination mb-5">
-                          <div class="left active">
-                            <div class="double-a dir">
-                              <i class="fa-solid fa-angles-left"></i>
-                            </div>
-                            <div class="single-a dir">
-                              <i class="fa-solid fa-chevron-left"></i>
-                            </div>
-                          </div>
+                      <div class="sub-sections sub-section-a mb-4">
+                        <div class="title">
+                          <h5>Bio</h5>
+                        </div>
 
-                          <div class="con-count d-flex align-items-center justify-content-around">
-                            <p class="count dir active">1</p>
-                            <p class="count dir">2</p>
-                            <p class="count dir">3</p>
-                          </div>
+                        <div class="body">
+                          <p class="grey-color-01">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis sit
+                            nihil reiciendis fuga
+                            ullam reprehenderit atque asperiores neque voluptatem optio! Veniam ex in omnis ipsa ducimus
+                            suscipit inventore rerum aliquam voluptates reiciendis repellat blanditiis nemo quae illum a
+                            necessitatibus, totam dolorum praesentium odit placeat eveniet fuga? Sapiente in dolorem hic
+                            expedita velit, repellat enim totam eveniet ipsa distinctio possimus error.</p>
+                        </div>
+                      </div>
 
-                          <div class="right">
-                            <div class="single-b dir">
-                              <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                            <div class="double-b dir">
-                              <i class="fa-solid fa-angles-right"></i>
-                            </div>
-                          </div>
+                      <div class="sub-sections sub-section-b mb-4">
+                        <div class="title">
+                          <h5>Availabilty</h5>
+                        </div>
+
+                        <div class="body">
+                          <ul class="days d-flex gap-3">
+                            <li>MON</li>
+                            <li>TUE</li>
+                            <li class="not">WED</li>
+                            <li class="not">THUR</li>
+                            <li>FRI</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="sub-sections sub-section-c">
+                        <div class="title">
+                          <h5>Interest</h5>
+                        </div>
+
+                        <div class="body">
+                          <p class="grey-color-01">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                            totam vero, quam dignissimos dolor quisquam!</p>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div></div>
+                  <!-- Section B -->
+                  <div class="col-12 col-lg-4">
+                    <div class="section-b">
+                      <div class="con-profile-card">
+                        <div class="heading mb-4">
+                          <h5>Other Mentors for this Programme</h5>
+                        </div>
+                        <div class="con-card">
+                          <div class="profile-card-2">
+                            <div class="d-flex">
+                              <div class="img">
+                                <img
+                                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                  alt="">
+                              </div>
+                              <div class="ms-3">
+                                <div class="name">John Doe</div>
+                                <div class="title">Senior Marketer</div>
+                                <div class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="profile-card-2">
+                            <div class="d-flex">
+                              <div class="img">
+                                <img
+                                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                  alt="">
+                              </div>
+                              <div class="ms-3">
+                                <div class="name">John Doe</div>
+                                <div class="title">Senior Marketer</div>
+                                <div class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="profile-card-2">
+                            <div class="d-flex">
+                              <div class="img">
+                                <img
+                                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                  alt="">
+                              </div>
+                              <div class="ms-3">
+                                <div class="name">John Doe</div>
+                                <div class="title">Senior Marketer</div>
+                                <div class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="profile-card-2">
+                            <div class="d-flex">
+                              <div class="img">
+                                <img
+                                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                  alt="">
+                              </div>
+                              <div class="ms-3">
+                                <div class="name">John Doe</div>
+                                <div class="title">Senior Marketer</div>
+                                <div class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                  <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -426,7 +488,7 @@
               </li>
             </a>
             <a href="./program.dashboard.html">
-              <li>
+              <li class="active">
                 <div class="icon">
                   <i class="fa-solid fa-clock"></i>
                 </div>
@@ -442,7 +504,7 @@
               </li>
             </a>
             <a href="./event.dashboard.html">
-              <li class="active">
+              <li>
                 <div class="icon">
                   <i class="fa-solid fa-calendar"></i>
                 </div>
@@ -486,6 +548,7 @@
 
   <!-- Modals -->
   <div class="con-modal">
+
     <div class="modal fade" id="show-tasks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -617,6 +680,35 @@
         </div>
       </div>
     </div>
+
+
+    <div class="modal fade" id="connect-mentor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable justify-content-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="exampleModalLabel">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="first mb-3">
+              <h2>Your Mentorship Request has been sent.</h2>
+            </div>
+            <div class="second">
+              <p>A notification will be sent to notify you of their approval.</p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="secondary-button px-3" data-bs-dismiss="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

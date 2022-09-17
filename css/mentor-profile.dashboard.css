@@ -592,17 +592,90 @@ body {
     height: 26vh;
   }
 }
-.event-card {
+.profile-card-2 {
+  width: 100%;
+  padding: 14px 10px;
+}
+
+.program-card {
   width: 100%;
 }
 
-.main-container .con-container .row .con-dashboard .dashboard .con-header .title {
+.main-container .con-container .row .con-dashboard .dashboard .con-section {
+  margin-right: 0;
+  margin-left: 0;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .profile .img {
+  overflow: hidden;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .profile .ratings i {
+  color: #FFA51E;
+  font-size: 1.2rem;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .profile .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .profile .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .connect-btn .primary-button, .main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .connect-btn .secondary-button {
   margin: 0;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
-.main-container .con-container .row .con-dashboard .dashboard .dashboard-section {
-  height: 80vh;
-  padding: 0 6px;
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .sub-sections .title h5 {
+  font-size: 16px;
+  margin-bottom: 26px;
 }
-.main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections {
-  margin-bottom: 50px;
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .sub-section-b .days li {
+  background: #FFA51E;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .sub-section-b .days li.not {
+  background: #c4c4c4;
+  color: #333;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-b .con-profile-card {
+  background: #F2F2F2;
+  border-radius: 1rem;
+  padding: 18px 14px 6px 14px;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-b .con-profile-card h5 {
+  font-size: 1rem;
+}
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-b .con-profile-card .profile-card-2 {
+  margin-bottom: 20px;
+}
+
+.con-modal #connect-mentor .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  width: 318px;
+}
+.con-modal #connect-mentor .modal-content .modal-body {
+  text-align: center;
+}
+.con-modal #connect-mentor .modal-content .modal-body .first h2 {
+  font-size: 18px;
+}
+.con-modal #connect-mentor .modal-content .modal-body .second p {
+  font-size: 16px;
+}
+.con-modal #connect-mentor .modal-content .modal-header i, .con-modal #connect-mentor .modal-content .modal-content i, .con-modal #connect-mentor .modal-content .modal-footer i {
+  color: #734BBA;
+  font-size: 3.6rem;
+}
+.con-modal #connect-mentor .modal-content .modal-footer button {
+  background: #734BBA;
+  color: #fff;
 }

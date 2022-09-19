@@ -184,11 +184,12 @@
             <!-- Section B -->
             <div class="section-b">
 
-              <div class="row-01">
+              <div class="row-01 mb-5">
                 <div>
                   <div class="header d-flex align-items-center justify-content-between">
                     <h2 class="font-01">Interest</h2>
-                    <button class="secondary-button px-3" data-bs-toggle="modal" data-bs-target="#edit-interest">
+                    <button class="secondary-button px-3" data-bs-toggle="modal"
+                      data-bs-target="#user-profile-edit-interest">
                       <i class="fa-solid fa-pen-to-square me-2"></i> Edit
                     </button>
                   </div>
@@ -203,10 +204,10 @@
                 </div>
               </div>
 
-              <div class="row-02">
+              <div class="row-02 mb-4">
                 <div class="header d-flex align-items-center justify-content-between">
                   <h2 class="font-01">Professional Bio</h2>
-                  <button class="secondary-button px-3" data-bs-toggle="modal" data-bs-target="#edit-interest">
+                  <button class="secondary-button px-3" data-bs-toggle="modal" data-bs-target="#user-profile-edit-bio">
                     <i class="fa-solid fa-pen-to-square me-2"></i> Edit
                   </button>
                 </div>
@@ -215,41 +216,88 @@
                 </div>
               </div>
 
-              <div class="row-03">
+              <div class="row-03  mb-4">
                 <div class="header d-flex align-items-center justify-content-between">
                   <h2 class="font-01">Personal Details</h2>
-                  <button class="secondary-button px-3" data-bs-toggle="modal" data-bs-target="#edit-interest">
+                  <button class="secondary-button px-3" data-bs-toggle="modal"
+                    data-bs-target="#user-profile-personal-details">
                     <i class="fa-solid fa-pen-to-square me-2"></i> Edit
                   </button>
                 </div>
-                <div class="body d-inline-block d-lg-flex justify-content-between">
-                  <div class="mb-4 mb-lg-9">
+
+                <div class="body row">
+                  <div class="col-12 col-lg-4 mb-4 mb-lg-9">
                     <div class="title">Full Name</div>
                     <div class="value">James Konan</div>
                   </div>
 
-                  <div class="mb-4 mb-lg-9">
+                  <div class="col-12 col-lg-4 mb-4 mb-lg-9">
                     <div class="title">Gender</div>
                     <div class="value">
                       <p class="disabled-color">Undefined</p>
                     </div>
                   </div>
 
-                  <div class="mb-4 mb-lg-9">
+                  <div class="col-12 col-lg-4 mb-4 mb-lg-9">
                     <div class="title">Position</div>
                     <div class="value">Content Writer</div>
                   </div>
                 </div>
               </div>
 
-              <div class="row-04">
+              <div class="row-04  mb-5">
                 <div class="header d-flex align-items-center justify-content-between">
                   <h2 class="font-01">Contact Details</h2>
-                  <button class="secondary-button px-3" data-bs-toggle="modal" data-bs-target="#edit-interest">
+                  <button class="secondary-button px-3" data-bs-toggle="modal"
+                    data-bs-target="#edit-contact">
                     <i class="fa-solid fa-pen-to-square me-2"></i> Edit
                   </button>
                 </div>
-                <div class="body"></div>
+                <div class="body">
+                  <div class="row">
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-9">
+                      <div class="title">Email</div>
+                      <div class="value">jameskonan@gmail.com</div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-9">
+                      <div class="title">Phone Number</div>
+                      <div class="value">
+                        <p class="disabled-color">0700 000 0000</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-9">
+                      <div class="title">Street No.</div>
+                      <div class="value">
+                        <p class="disabled-color">Undefined</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-9">
+                      <div class="title">Address</div>
+                      <div class="value">
+                        <p class="disabled-color">Undefined</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-9">
+                      <div class="title">LGA</div>
+                      <div class="value">
+                        <p class="disabled-color">Undefined</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-9">
+                      <div class="title">State</div>
+                      <div class="value">
+                        <p class="disabled-color">Undefined</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -586,15 +634,34 @@
       </div>
     </div>
 
-    <!-- Interest Modal -->
-    <div class="modal fade" id="edit-interest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- User Profile Edit Interest Modal -->
+    <div class="modal fade" id="user-profile-edit-interest" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Interest</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Interests</h5>
           </div>
           <div class="modal-body">
+            <ul class="con-interest">
+              <div class="d-flex align-items-center justify-content-between">
+                <li class="secondary-button" id="element-toggle">Marketing</li>
+                <li class="secondary-button" id="element-toggle">Marketing</li>
+                <li class="secondary-button" id="element-toggle">Finance</li>
+              </div>
 
+              <div class="d-flex align-items-center justify-content-between">
+                <li class="secondary-button" id="element-toggle">Marketing</li>
+                <li class="secondary-button" id="element-toggle">Marketing</li>
+                <li class="secondary-button" id="element-toggle">Finance</li>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between">
+                <li class="secondary-button" id="element-toggle">Marketing</li>
+                <li class="secondary-button" id="element-toggle">Marketing</li>
+                <li class="secondary-button" id="element-toggle">Finance</li>
+              </div>
+            </ul>
           </div>
           <div class="modal-footer">
             <button class="primary-button px-3" data-bs-dismiss="modal">
@@ -609,7 +676,90 @@
       </div>
     </div>
 
-    <!-- Edit Contact Modal -->
+    <!-- User Profile Edit Bio Modal -->
+    <div class="modal fade" id="user-profile-edit-bio" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Professional Bio</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="title mb-3">
+                <p>Bio</p>
+              </div>
+
+              <textarea name="bio-data">Write a short note describing yourself</textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="primary-button px-3" data-bs-dismiss="modal">
+              Save
+            </button>
+
+            <button class="secondary-button px-3 ms-3" data-bs-dismiss="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Profile Edit Personal Details Modal -->
+    <div class="modal fade" id="user-profile-personal-details" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Personal Details</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="d-block d-lg-flex gap-5 mb-4">
+                <div>
+                  <label for="text-field">Full Name</label>
+                  <div class="text-field" id="text-field">
+                    <input type="text" placeholder="Update your name">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="text-field">Position</label>
+                  <div class="text-field" id="text-field">
+                    <input type="text" placeholder="Update position">
+                  </div>
+                </div>
+
+              </div>
+
+              <div>
+                <label for="00" class="mb-3">Gender</label>
+
+                <div class="d-flex align-items-center justify-content-start gap-2">
+                  <p>Male</p>
+                  <span class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" checked>
+                    <p>Female</p>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="primary-button px-3" data-bs-dismiss="modal">
+              Save
+            </button>
+
+            <button class="secondary-button px-3 ms-3" data-bs-dismiss="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Profile Edit Contact Details Modal  -->
     <div class="modal fade" id="edit-contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content px-3">

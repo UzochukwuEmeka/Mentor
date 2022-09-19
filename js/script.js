@@ -1,14 +1,16 @@
-const selectors = document.querySelectorAll('.con-selector .secondary-button')
+const selectors = document.querySelectorAll('#element-toggle')
 
 const sidebar = document.querySelector('.con-nav-sidebar')
 const menu = document.getElementById('first-menu')
 
+// Toggle buttons
 selectors.forEach(selector => addEvent(selector))
 
 function addEvent(list) {
   list.addEventListener('click', () => { list.classList.toggle('active') })
 }
 
+// Sidebar handler
 menu.addEventListener('click', slideIn)
 
 document.addEventListener('click', slideClose)

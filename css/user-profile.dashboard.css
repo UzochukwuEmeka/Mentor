@@ -13,6 +13,7 @@
   cursor: pointer;
   transition: 0.25s transform;
   border: 2px solid transparent;
+  white-space: nowrap;
 }
 .primary-button:hover, .secondary-button:hover {
   transform: scale(0.98);
@@ -696,14 +697,58 @@ body {
   color: #FFA51E;
 }
 
+.con-modal .text-field, .con-modal select.select-field, .con-modal .password-field,
+.con-modal .form-select {
+  width: 100%;
+}
+.con-modal #edit-contact .modal-body .form-select {
+  width: 100%;
+}
+.con-modal #user-profile-edit-interest .modal-dialog, .con-modal #user-profile-edit-bio .modal-dialog {
+  max-width: 500px;
+}
+.con-modal #user-profile-edit-interest .modal-dialog .con-interest .secondary-button, .con-modal #user-profile-edit-bio .modal-dialog .con-interest .secondary-button {
+  color: #FFA51E;
+  border-color: #FFA51E;
+}
+.con-modal #user-profile-edit-interest .modal-dialog .con-interest .secondary-button.active, .con-modal #user-profile-edit-bio .modal-dialog .con-interest .secondary-button.active {
+  background: #FFA51E;
+  color: #fff;
+}
+.con-modal #user-profile-edit-bio textarea {
+  border-radius: 0.5rem;
+  padding: 40px 20px;
+  width: 100%;
+}
+.con-modal #user-profile-edit-bio .form-check-input:checked {
+  background-color: #734BBA;
+  border-color: #734BBA;
+}
+.con-modal .modal .modal-header h5.modal-title, .con-modal .modal .modal-content h5.modal-title, .con-modal .modal .modal-footer h5.modal-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 @media (min-width: 768px) {
   .main-container .con-container .row .con-dashboard .section-a {
     padding: 40px 60px;
   }
   .main-container .con-container .row .con-dashboard .section-b {
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 0px 60px;
   }
-  .main-container .con-container .row .con-dashboard .section-b .row-01 .body ul li {
+  .main-container .con-container .row .con-dashboard .section-b::-webkit-scrollbar {
+    display: none;
+  }
+  .main-container .con-container .row .con-dashboard .section-b::-webkit-scrollbar .row-01 .body ul li {
     margin-bottom: 0;
+  }
+  .con-modal .text-field, .con-modal select.select-field, .con-modal .password-field {
+    width: 400px;
+  }
+  .con-modal #edit-contact .modal-body .form-select {
+    width: 400px;
   }
 }

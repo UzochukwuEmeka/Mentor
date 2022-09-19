@@ -13,6 +13,7 @@
   cursor: pointer;
   transition: 0.25s transform;
   border: 2px solid transparent;
+  white-space: nowrap;
 }
 .primary-button:hover, .secondary-button:hover {
   transform: scale(0.98);
@@ -635,15 +636,16 @@ body {
   margin-bottom: 26px;
 }
 .main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .sub-section-b .days li {
-  background: #FFA51E;
-  color: #fff;
+  background: #c4c4c4;
+  color: #333;
   padding: 6px 10px;
   border-radius: 0.25rem;
   font-size: 0.9rem;
+  cursor: pointer;
 }
-.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .sub-section-b .days li.not {
-  background: #c4c4c4;
-  color: #333;
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .sub-section-b .days li.active {
+  background: #FFA51E;
+  color: #fff;
 }
 .main-container .con-container .row .con-dashboard .dashboard .con-section .section-b .con-profile-card {
   background: #F2F2F2;

@@ -1,5 +1,8 @@
 @import overview.dashboard
 
+.text-field, .select-field
+  width: 100%
+
 .goal-card
   width: 100%
   padding: 14px 10px
@@ -21,9 +24,37 @@
 
             .sections
               margin-bottom: 50px
+              
+              .goal-card
+                .header .arrow-right
+                  cursor: pointer
 
               .list
                 .header
-                  h2 
+                  h2
                     font-size: 1.2rem
 
+.con-modal
+  #create-goal
+    .modal-dialog
+      max-width: 460px
+
+    .modal-title
+      font-size: 24px
+
+    .modal-body
+      .select-field
+        border: 2px solid #e21111
+
+      .goal-desc
+        textarea
+          border-radius: .5rem
+          width: 100%
+          padding: 25px 10px
+
+  #update-goal
+    @extend #create-goal
+
+    .modal-body
+      .select-field
+        border: 2px solid $secondary-color

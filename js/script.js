@@ -26,7 +26,7 @@ function slideOpen() {
 
 function slideClose(evt) {
   const target = evt.target.closest('.nav-sidebar')
-  if (!target) sidebar.classList.remove('active')
+  if (!target) sidebar?.classList.remove('active')
 }
 
 deleteGoalBtn?.addEventListener('click', () => { confirm('Are you sure you want to delete?') })

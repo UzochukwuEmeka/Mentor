@@ -192,6 +192,7 @@ select.select-field {
   background: #33aa57;
   padding: 2px 8px;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .goal-card .footer .status-btn-2 {
   background: #FFA51E;
@@ -522,6 +523,7 @@ select.select-field {
   background: #33aa57;
   padding: 2px 8px;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .goal-card .footer .status-btn-2 {
   background: #FFA51E;

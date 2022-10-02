@@ -686,6 +686,9 @@ h1, h2, h3, h4 {
   width: 92%;
   max-width: 900px;
 }
+.main-container .con-card .cards .img {
+  height: 100%;
+}
 .main-container .con-card .cards .right {
   padding: 60px 30px;
 }

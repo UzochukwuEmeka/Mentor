@@ -685,3 +685,72 @@ body {
   background: #734BBA;
   color: #fff;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-field,
+select.select-field,
+.password-field {
+  width: 100%;
+}
+.text-field i,
+select.select-field i,
+.password-field i {
+  color: #818181;
+  font-size: 1.3rem;
+}
+
+.textarea-field textarea {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  height: 100px;
+  padding: 8px 16px;
+}
+
+.con-modal #show-note .modal-dialog, .con-modal #show-evaluation .modal-dialog, .con-modal #show-create-note .modal-dialog {
+  max-width: 460px;
+}
+.con-modal #show-note .con-card, .con-modal #show-evaluation .con-card, .con-modal #show-create-note .con-card {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 24px;
+}
+.con-modal #show-create-note textarea {
+  height: 160px;
+  border-radius: 0.5rem;
+}
+.con-modal #show-evaluation textarea {
+  height: 170px;
+}
+.con-modal #show-evaluation .ratings i {
+  font-size: 1.4rem;
+}
+.con-modal #show-confirm-evaluation .modal-title {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 60px;
+  height: 60px;
+  background: #FFA51E;
+  color: #fff;
+}
+.con-modal #show-confirm-evaluation .modal-title i {
+  font-size: 1.8rem;
+}
+.con-modal #show-confirm-evaluation .modal-body h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .text-field,
+select.select-field,
+.password-field {
+    width: 400px;
+  }
+  #show-confirm-evaluation .modal-dialog {
+    max-width: 280px;
+  }
+}

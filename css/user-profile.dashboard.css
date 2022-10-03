@@ -321,6 +321,10 @@ h1, h2, h3, h4 {
   border-radius: 50%;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .breadcrumb {
   margin: 0;
   font-size: 1rem;
@@ -600,6 +604,11 @@ body {
 
 .disabled-color {
   color: #888;
+}
+
+.form-check-input:checked {
+  background-color: #734BBA;
+  border-color: #734BBA;
 }
 
 .main-container .con-container .row .con-dashboard .section-a {

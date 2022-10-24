@@ -1,0 +1,325 @@
+@import ../utils/index
+
+body
+  background: #EDEDED
+
+// Primary and Secondary Buttons
+.primary-button,
+.secondary-button
+  font-size: 1rem
+
+// Main Container
+.main-container
+  position: relative
+
+  $navbar-height: 80px
+
+  // Navbar
+  .main-navbar
+    position: fixed
+    top: 0
+    width: 100%
+    height: $navbar-height
+    padding: 6px 12px 0 12px
+    z-index: 10
+
+    .con-navbar
+      background: $primary-color
+      height: 100%
+      border-radius: $card-radius-02
+
+      .con-menu
+        padding: 8px
+        i
+          color: #fff
+          font-size: 1.4rem
+
+      .con-logo i
+        font-size: 2rem
+
+  // Main Container
+  .con-container
+    margin-top: $navbar-height + 10px
+
+    .row
+
+      .con-sidebar-left,
+      .con-sidebar-right,
+      .con-dashboard
+        width: 100%
+        border-radius: $card-radius-03
+        overflow: hidden
+
+      // Left Sidebar
+      .con-sidebar-left
+        background: $primary-color
+        padding: 60px 40px
+
+        // Navigation List
+        ul
+          li
+            margin-bottom: 2.2rem
+            font-size: 16px
+            font-weight: 400
+            color: #fff
+            display: flex
+            align-items: center
+            &:hover
+              color: $secondary-color
+
+            .icon
+              margin-right: .6rem
+
+          li.active
+            color: $secondary-color
+
+      // Right Sidebar
+      .con-sidebar-right
+        background: #fff
+        padding: 60px 20px
+
+        // Profile Section 
+        .profile-section
+          h1
+            font-size: 1.6rem
+            font-weight: 400
+            color: $gray-color-01
+
+          h2
+            font-size: 16px
+
+          .profile-header
+
+            .img
+              height: 40px
+              width: 40px
+              overflow: hidden
+              border-radius: 50%
+
+        // Task Section
+        .task-section
+          h1
+            font-size: 1.2rem
+
+          .task-list
+            height: 40vh
+            overflow-x: hidden
+            overflow-y: auto
+
+            .task-card
+              width: 98%
+
+      // Dashboard
+      .con-dashboard
+        background: #fff
+
+        .dashboard
+          padding: 60px 20px
+
+          // Dashboard Header
+          .con-header
+            .title
+              font-size: 24px
+              font-weight: 500
+              margin-bottom: 1.6rem
+
+            p
+              margin-bottom: 1.6rem
+
+          // Dashboard Body
+          .dashboard-section
+            height: 70.2vh
+            overflow-x: hidden
+            overflow-y: auto
+            &::-webkit-scrollbar
+              display: none
+
+            &
+              -ms-overflow-style: none
+              scrollbar-width: none
+
+            // Program Section
+            .sections
+              margin-bottom: 30px
+
+              // Header
+              .header
+                margin-bottom: 20px
+                h1
+                  font-weight: 500
+                  font-size: 18px
+
+              // Program List
+              .con-list
+                width: 100%
+                overflow-x: auto
+                overflow-y: hidden
+
+                &::-webkit-scrollbar
+                  display: none
+
+                &
+                  -ms-overflow-style: none
+                  scrollbar-width: none
+
+                .list
+                  width: 1100px
+                  padding-bottom: 20px
+                  padding-left: 4px
+
+                  .con-card
+                    margin-right: 20px
+
+// Nav Sidebar 
+.con-nav-sidebar
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 100
+  background: #00000062
+  display: none
+  align-items: center
+  padding: 0 20px
+
+  .nav-sidebar
+    height: 98vh
+    background: #fff
+    max-width: 500px
+    width: 80%
+    border-radius: $card-radius-02
+
+    .sidebar
+      display: flex
+      flex-direction: column
+      height: 100%
+      justify-content: space-between
+
+      .item
+        width: 100%
+        padding: 0 12px
+
+        ul
+          li
+            padding: 10px 14px
+            margin: 30px 0
+            display: flex
+            font-size: 1.2rem
+            color: $primary-color
+            background: #fafafa
+            border-radius: $card-radius-02
+            
+            .icon
+              margin-right: 20px
+
+          li.active
+            color: $secondary-color
+
+            .icon
+              margin-right: 20px
+
+      .item.second
+        ul li
+          background: #fff
+
+.con-nav-sidebar.active
+  display: flex
+
+// Drop Down
+.dropdown .dropdown-menu
+  border: 0
+  border-radius: $card-radius-02
+  box-shadow: 0 0 16px #bbbbbb
+
+
+// Modals
+.con-modal .modal .modal-dialog
+  max-width: 900px
+
+  .modal-content
+    padding: 14px 12px
+
+    .modal-body
+      .task-card
+        width: 100%
+
+    .modal-footer
+      justify-content: flex-start
+
+
+// Media Queries
+
+// Tablets > 768px
+@media (min-width: $tablet-screen-width)
+  .main-container
+
+    .con-container
+
+      .row
+
+        .con-sidebar-left,
+        .con-sidebar-right,
+        .con-dashboard
+          height: 91vh
+
+        // Dashboard
+        .con-dashboard
+
+          .dashboard
+
+        // Right Sidebar
+        .con-sidebar-right
+
+          // Task Section
+          .task-section
+
+    // Nav Sidebar 
+
+  .con-nav-sidebar
+
+    .nav-sidebar
+
+      .sidebar
+
+        .item
+          padding: 0 20px
+
+// Large Screen > 992px
+@media (min-width: $large-screen-width)
+  .main-container
+
+    .con-container
+      margin-top: 0
+
+      .row.main-row
+        height: 100vh
+
+        .con-sidebar-left,
+        .con-sidebar-right,
+        .con-dashboard
+          height: 98vh
+          width: 100%
+          border-radius: $card-radius-03
+
+        // Dashboard
+        .con-dashboard
+          background: #fff
+
+          .dashboard
+            padding: 60px 44px
+
+        // Right Sidebar
+        .con-sidebar-right
+          height: 98vh
+          width: 100%
+          border-radius: $card-radius-03
+
+          // Task Section
+        .task-section
+
+          .task-list
+            height: 26vh
+
+// Extra Large Screen > 1200px
+@media (min-width: $x-large-screen-width)

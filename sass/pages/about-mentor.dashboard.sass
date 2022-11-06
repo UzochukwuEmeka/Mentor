@@ -35,7 +35,7 @@ select.select-field,
 
   #show-create-note
     @extend #show-note
-    
+
     textarea
       height: 160px
       border-radius: .5rem
@@ -49,6 +49,9 @@ select.select-field,
     .ratings
       i
         font-size: 1.4rem
+        cursor: pointer
+        &.fa-solid
+          color: $secondary-color
 
   #show-confirm-evaluation
     $size: 60px
@@ -68,7 +71,6 @@ select.select-field,
       h3
         font-size: 1.2rem
         font-weight: 400
-    
 
 @media (min-width: 992px)
   .text-field,

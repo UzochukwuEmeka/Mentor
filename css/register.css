@@ -172,6 +172,7 @@ select.select-field {
 .task-card .body p {
   font-size: 0.96rem;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .goal-card {
@@ -507,6 +508,7 @@ select.select-field {
 .task-card .body p {
   font-size: 0.96rem;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .goal-card {

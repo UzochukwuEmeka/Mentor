@@ -172,6 +172,7 @@ select.select-field {
 .task-card .body p {
   font-size: 0.96rem;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .goal-card {
@@ -731,6 +732,10 @@ select.select-field i,
 }
 .con-modal #show-evaluation .ratings i {
   font-size: 1.4rem;
+  cursor: pointer;
+}
+.con-modal #show-evaluation .ratings i.fa-solid {
+  color: #FFA51E;
 }
 .con-modal #show-confirm-evaluation .modal-title {
   border-radius: 50%;

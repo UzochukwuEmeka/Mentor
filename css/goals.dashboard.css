@@ -172,6 +172,7 @@ select.select-field {
 .task-card .body p {
   font-size: 0.96rem;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .goal-card {
@@ -605,6 +606,15 @@ body {
 .goal-card {
   width: 100%;
   padding: 14px 10px;
+}
+.goal-card .status-btn-3.not-start {
+  background: #e02323;
+}
+.goal-card .status-btn-3.in-progress {
+  background: #b9b905;
+}
+.goal-card .status-btn-3.completed {
+  background: green;
 }
 
 .dropdown-item.active {

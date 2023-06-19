@@ -1,0 +1,10 @@
+
+/* admin.evaluate.html */
+.textarea-field textarea {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: .25rem;
+    border: 1px solid #0c0c0c;
+    height: 170px;
+    padding: 8px 16px
+}

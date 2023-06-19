@@ -1,0 +1,108 @@
+@import overview.dashboard
+
+.dashboard-section
+    .section-a
+        .con-card
+            border-radius: 10px
+            background: $gray-color-02
+            padding: 24px 2px
+            h5
+
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                color: #0C0C0C
+    .total-con
+        background: #FFFFFF
+        padding: 20px
+        gap: 10px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: wrap
+
+        .-card
+            width: 200px
+            height: 200px
+            border-radius: 20px
+            background: #f5f5f5
+            flex: 1 0 calc(25% - 20px)
+            position: relative
+            padding: 1.8rem
+            border: 2px solid #c3c6ce
+            transition: 0.5s ease-out
+            overflow: visible
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            text-align: center
+            margin-right: 40px
+            margin-bottom: 10px
+            &-details
+                color: black
+                height: 100%
+                gap: 0.5em
+                display: flex
+                flex-direction: column
+                text-align: center
+                justify-content: center
+            &-button
+                transform: translate(-50%, 125%)
+                width: 60%
+                border-radius: 1rem
+                border: none
+                background-color: #734BBA
+                color: #fff
+                font-size: 1rem
+                padding: 0.5rem 1rem
+                position: absolute
+                left: 50%
+                bottom: 10px
+                opacity: 0
+                transition: 0.3s ease-out
+                text-align: center
+            & .text-body
+                color: rgb(134, 134, 134)
+                ont-style: normal
+                font-weight: 500
+                font-size: 18px
+                line-height: 27px
+
+            & .text-title
+                font-style: normal
+                font-weight: 700
+                font-size: 54px
+                color: #4c327a
+            &:hover
+                border-color: #734BBA
+                box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25)
+            &:hover .-card-button
+                transform: translate(-50%, 50%)
+                opacity: 1
+
+            // h3
+            //     font-style: normal
+            //     font-weight: 600
+            //     font-size: 20px
+            //     line-height: 22px
+            // .amount
+            //     // background: #734bba
+            //     background: #F8F8F8
+            //     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
+            //     padding: 24px 2px
+            //     border-radius: 10px
+            //     display: flex
+            //     justify-content: center
+            //     align-items: center
+            //     text-align: center
+            //     width: 100px
+            //     height: 90px
+            //     h2
+            //         font-style: normal
+            //         font-weight: 700
+            //         font-size: 54px
+            //         line-height: 81px
+            //         color: #91879f

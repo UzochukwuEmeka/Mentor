@@ -1,0 +1,30 @@
+/* admin.view.programme.html */
+.profile-card-1, .profile-card-2 {
+    width: 100%;
+    padding: 14px 10px;
+  }
+  
+  .program-card {
+    width: 100%;
+  }
+  
+  .main-container .con-container .row .con-dashboard .dashboard .con-header .first .arrow-left {
+    font-size: 1.2rem;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .section-a {
+    margin-bottom: 40px;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .section-a .con-card {
+    background: #F2F2F2;
+    padding: 15px;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .section-a .con-card h5 {
+    font-size: 0.98rem;
+    margin: 8px 0;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .section-b {
+    height: 60vh;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .section-b .password-field {
+    width: 100%;
+  }

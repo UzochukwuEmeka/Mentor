@@ -1,0 +1,68 @@
+/* admin.users.dashboard.html */
+.text-field, select.select-field, .password-field {
+    width: 253px;
+  }
+  
+  .table-responsive .table {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .table-responsive .table thead tr th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 1rem 1.4rem !important;
+    color: #734BBA;
+  }
+  
+  .table-responsive .table tbody tr td {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #969696;
+    padding: 1rem 1.4rem !important;
+  }
+  .table-responsive .table tbody tr td .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px;
+  }
+  
+  .mentor-btn {
+    font-size: 12px;
+  }
+  
+  .mentor {
+    background: #2D9CDB;
+  }
+  
+  .mentee {
+    background: #27AE60;
+  }
+  
+  .table-responsive::-webkit-scrollbar {
+    display: none;
+  }
+  .tertiary-button {
+    border: 2px solid #dd4718;
+    background: #fff;
+    color: #dd4718;
+    box-shadow: none;
+}
+
+.primary-button, .tertiary-button, .secondary-button {
+    padding: 6px 10px;
+    outline: 0;
+    border-radius: 0.5rem;
+    font-size: .9rem;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px #ccb5f7;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s transform;
+    white-space: nowrap;
+}

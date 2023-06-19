@@ -1,0 +1,102 @@
+.text-field,
+select.select-field,
+.password-field {
+    width: 253px
+}
+
+.table-responsive .table {
+    width: max-content
+}
+
+.table-responsive .table thead tr th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 1rem 1.4rem !important;
+    color: #734bba
+}
+
+.table-responsive .table tbody tr td {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #969696;
+    padding: 1rem 1.4rem !important
+}
+
+.table-responsive .table tbody tr td .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px
+}
+
+#create-goal .modal-dialog,
+#update-goal .modal-dialog {
+    max-width: 460px
+}
+
+#create-goal .modal-title,
+#update-goal .modal-title {
+    font-size: 24px
+}
+
+#create-goal .con-row .text-field,
+#update-goal .con-row .text-field,
+#create-goal .con-row select.select-field,
+#update-goal .con-row select.select-field,
+#create-goal .con-row .password-field,
+#update-goal .con-row .password-field {
+    width: 100%
+}
+
+#create-goal .select-field,
+#update-goal .select-field {
+    border: 2px solid #e21111
+}
+
+#create-goal .goal-desc textarea,
+#update-goal .goal-desc textarea {
+    border-radius: .5rem;
+    width: 100%;
+    padding: 25px 10px
+}
+
+#update-goal .select-field {
+    border: 2px solid #ffa51e
+}
+
+#delete .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    width: 318px
+}
+
+#delete .modal-content .modal-body {
+    text-align: center
+}
+
+#delete .modal-content .modal-body .first h2 {
+    font-size: 18px
+}
+
+#delete .modal-content .modal-body .second p {
+    font-size: 16px
+}
+
+#delete .modal-content .modal-header i,
+#delete .modal-content .modal-content i,
+#delete .modal-content .modal-footer i {
+    color: #734bba;
+    font-size: 3.6rem
+}
+
+#delete .modal-content .modal-footer button {
+    background: #734bba;
+    color: #fff
+}

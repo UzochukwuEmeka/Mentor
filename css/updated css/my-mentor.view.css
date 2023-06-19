@@ -1,0 +1,207 @@
+/* my-mentor.view.html and my-mentee.view.html share same css*/
+.profile-card-1,
+.profile-card-2 {
+    width: 100%;
+    padding: 14px 10px;
+}
+
+.password-field {
+    width: 100%;
+}
+
+.main-container .con-container .row .con-dashboard .dashboard .con-header .title {
+    margin: 0;
+}
+
+.main-container .con-container .row .con-dashboard .dashboard .dashboard-section {
+    height: 76vh;
+    padding: 0 2px;
+}
+
+.main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections {
+    margin-bottom: 50px;
+}
+
+.connect-btn .demote {
+    border-color: #dd4718;
+    color: #dd4718
+}
+
+.connect-btn .disable {
+    border-color: #734bba;
+    color: #734bba
+}
+
+.connect-btn .connected {
+    border-color: #c8c8c8;
+    color: #c8c8c8
+}
+
+.modal-footer .secondary-button {
+    background: #fff !important;
+    color: #734bba !important
+}
+
+.main-container .con-container .row .con-dashboard .dashboard .con-section .section-a .profile .img {
+    overflow: hidden;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.con-modal #connect-mentor .modal-content,
+.con-modal #demote-mentor .modal-content,
+.con-modal #disable-mentor .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    width: 318px
+}
+
+.con-modal #connect-mentor .modal-content .modal-body,
+.con-modal #demote-mentor .modal-content .modal-body,
+.con-modal #disable-mentor .modal-content .modal-body {
+    text-align: center
+}
+
+.con-modal #connect-mentor .modal-content .modal-body .first h2,
+.con-modal #demote-mentor .modal-content .modal-body .first h2,
+.con-modal #disable-mentor .modal-content .modal-body .first h2 {
+    font-size: 18px
+}
+
+.con-modal #connect-mentor .modal-content .modal-body .second p,
+.con-modal #demote-mentor .modal-content .modal-body .second p,
+.con-modal #disable-mentor .modal-content .modal-body .second p {
+    font-size: 16px
+}
+
+.con-modal #connect-mentor .modal-content .modal-header i,
+.con-modal #demote-mentor .modal-content .modal-header i,
+.con-modal #disable-mentor .modal-content .modal-header i,
+.con-modal #connect-mentor .modal-content .modal-content i,
+.con-modal #demote-mentor .modal-content .modal-content i,
+.con-modal #disable-mentor .modal-content .modal-content i,
+.con-modal #connect-mentor .modal-content .modal-footer i,
+.con-modal #demote-mentor .modal-content .modal-footer i,
+.con-modal #disable-mentor .modal-content .modal-footer i {
+    color: #734bba;
+    font-size: 3.6rem
+}
+
+.con-modal #connect-mentor .modal-content .modal-footer button,
+.con-modal #demote-mentor .modal-content .modal-footer button,
+.con-modal #disable-mentor .modal-content .modal-footer button {
+    background: #734bba;
+    color: #fff
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.text-field,
+select.select-field,
+.password-field {
+    width: 100%
+}
+
+.text-field i,
+select.select-field i,
+.password-field i {
+    color: #818181;
+    font-size: 1.3rem
+}
+
+.textarea-field textarea {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: .25rem;
+    height: 100px;
+    padding: 8px 16px
+}
+
+.con-modal #show-note .modal-dialog,
+.con-modal #show-evaluation .modal-dialog,
+.con-modal #show-create-note .modal-dialog {
+    max-width: 460px
+}
+
+.con-modal #show-note .con-card,
+.con-modal #show-evaluation .con-card,
+.con-modal #show-create-note .con-card {
+    border: 1px solid;
+    border-radius: .5rem;
+    padding: 24px
+}
+
+.con-modal #show-create-note textarea {
+    height: 160px;
+    border-radius: .5rem
+}
+
+.con-modal #show-evaluation textarea {
+    height: 170px
+}
+
+.con-modal #show-evaluation .ratings i {
+    font-size: 1.4rem;
+    cursor: pointer
+}
+
+.con-modal #show-evaluation .ratings i.fa-solid {
+    color: #ffa51e
+}
+
+.con-modal #show-confirm-evaluation .modal-title {
+    border-radius: 50%;
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    background: #ffa51e;
+    color: #fff
+}
+
+.con-modal #show-confirm-evaluation .modal-title i {
+    font-size: 1.8rem
+}
+
+.con-modal #show-confirm-evaluation .modal-body h3 {
+    font-size: 1.2rem;
+    font-weight: 400
+}
+
+@media(min-width: 992px) {
+
+    .text-field,
+    select.select-field,
+    .password-field {
+        width: 400px
+    }
+
+    #show-confirm-evaluation .modal-dialog {
+        max-width: 280px
+    }
+}
+
+.connect-btn .demote {
+    border-color: #dd4718;
+    color: #dd4718
+}
+
+.connect-btn .disable {
+    border-color: #734bba;
+    color: #734bba
+}
+
+.connect-btn .connected {
+    border-color: #c8c8c8;
+    color: #c8c8c8
+}
+
+.modal-footer .secondary-button {
+    background: #fff !important;
+    color: #734bba !important
+}
+

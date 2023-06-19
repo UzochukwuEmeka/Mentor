@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/admin.viewusers.dashboard.css">
+    <title>Mentor Community - Mentors</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Navbar -->
+        <div class="main-navbar d-lg-none">
+            <div class="con-navbar d-flex align-items-center justify-content-between px-4">
+
+                <div class="con-menu" id="first-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="con-logo">
+                    <div class="icon">
+                        <i class="fa-solid fa-m"></i>
+                    </div>
+                </div>
+
+                <div class="con-profile">
+                    <div class="img profile-dp">
+                        <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Container -->
+        <div class="con-container container">
+            <div class="main-row row">
+
+                <!-- Left Sidebar -->
+                <div class="col-2 d-none d-lg-flex align-items-center justify-content-center">
+                    <div class="con-sidebar-left">
+
+                        <!-- Header -->
+                        <div class="con-logo header d-flex align-items-center justify-content-start">
+                            <div class="icon pe-2">
+                                <i class="fa-solid fa-m"></i>
+                            </div>
+                        </div>
+
+                        <!-- Navigation List -->
+                        <ul class="mt-5">
+                            <a href="./admin.overview.dashboard.html">
+                                <li class="active">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-gauge"></i>
+                                    </div>
+                                    Overview
+                                </li>
+                            </a>
+                            <a href="./program.dashboard.html">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    Programmes
+                                </li>
+                            </a>
+                            <a href="./mentor.dashboard.html">
+                                <li >
+                                    <div class="icon">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    Mentors
+                                </li>
+                            </a>
+                            <a href="./event.dashboard.html">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </div>
+                                    Events
+                                </li>
+                            </a>
+                            <a href="./goals.dashboard.html">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                    </div>
+                                    Goals
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dashboard -->
+                <div class="col-12 col-md-8 col-lg-7 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
+                    <div class="con-dashboard">
+                        <div class="dashboard">
+
+                            <!-- Header -->
+                            <div class="con-header d-lg-flex align-items-center justify-content-between">
+                                <h1 class="title">John Ita</h1>
+                                <div class="button d-flex align-items-center">
+                                    <i class="fa-solid fa-user"></i>
+                                    Mentee
+                                </div>
+                            </div>
+                            <div class="position my-4">
+                                <h4>Postion</h4>
+                                <p class="pt-3">Accountant</p>
+                            </div>
+
+                            <!-- Dashboard Body -->
+                            <div class="dashboard-section">
+
+                                <!-- Sections -->
+
+
+                                <!-- Section B -->
+                                <div class="section-b">
+
+                                    <div class="row-01 mb-5">
+                                        <div>
+                                            <div class="header d-flex align-items-center justify-content-between">
+                                                <h2 class="font-01 text">Interest</h2>
+
+                                            </div>
+                                            <div class="body mt-3">
+                                                <ul class="d-inline-block d-lg-flex gap-lg-4">
+                                                    <li>Marketing</li>
+                                                    <li>Marketing</li>
+                                                    <li>Finance</li>
+                                                    <li>Finance</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <div class="section-c section-b2">
+                                    <div class="row-04  mb-5">
+                                        <div class="header d-flex align-items-center justify-content-between">
+                                            <h2 class="font-01">Contact Details</h2>
+                                            <button class="secondary-button px-3" data-bs-toggle="modal"
+                                                data-bs-target="#edit-contact">
+                                                <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                                            </button>
+                                        </div>
+                                        <div class="body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6 mb-4 mb-lg-9">
+                                                    <div class="title">Email</div>
+                                                    <div class="value">jameskonan@gmail.com</div>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 mb-4 mb-lg-9">
+                                                    <div class="title">Phone Number</div>
+                                                    <div class="value">
+                                                        <p class="disabled-color">0700 000 0000</p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6 mb-4 mb-lg-9">
+                                                    <div class="title">Street No.</div>
+                                                    <div class="value">
+                                                        <p class="disabled-color">Undefined</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 mb-4 mb-lg-9">
+                                                    <div class="title">Address</div>
+                                                    <div class="value">
+                                                        <p class="disabled-color">Undefined</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+
+
+                                                <div class="col-12 col-lg-6 mb-4 mb-lg-9">
+                                                    <div class="title">LGA</div>
+                                                    <div class="value">
+                                                        <p class="disabled-color">Undefined</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 mb-4 mb-lg-9">
+                                                    <div class="title">State</div>
+                                                    <div class="value">
+                                                        <p class="disabled-color">Undefined</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-c">
+
+                                    <div
+                                        class="heading d-lg-flex align-items-center justify-content-between mb-4 mb-lg-0">
+                                        <div class="title mb-3 mb-lg-0">
+                                            <h5>Mentors</h5>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="con-mentor">
+
+                                        <div class="row mb-lg-5">
+                                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                                                <div class="profile-card-1 con-card">
+                                                    <div class="d-flex mb-4">
+                                                        <div class="img">
+                                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="name">John Doe</div>
+                                                            <div class="title">Senior Marketer</div>
+                                                            <div class="ratings">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="./mentor-profile.dashboard.html">
+                                                        <div class="arrow-right">
+                                                            View Profile
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                                                <div class="profile-card-1 con-card">
+                                                    <div class="d-flex mb-4">
+                                                        <div class="img">
+                                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="name">John Doe</div>
+                                                            <div class="title">Senior Marketer</div>
+                                                            <div class="ratings">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="./mentor-profile.dashboard.html">
+                                                        <div class="arrow-right">
+                                                            View Profile
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                                                <div class="profile-card-1 con-card">
+                                                    <div class="d-flex mb-4">
+                                                        <div class="img">
+                                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="name">John Doe</div>
+                                                            <div class="title">Senior Marketer</div>
+                                                            <div class="ratings">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="./mentor-profile.dashboard.html">
+                                                        <div class="arrow-right">
+                                                            View Profile
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-lg-5">
+                                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                                                <div class="profile-card-1 con-card">
+                                                    <div class="d-flex mb-4">
+                                                        <div class="img">
+                                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="name">John Doe</div>
+                                                            <div class="title">Senior Marketer</div>
+                                                            <div class="ratings">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="./mentor-profile.dashboard.html">
+                                                        <div class="arrow-right">
+                                                            View Profile
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                                                <div class="profile-card-1 con-card">
+                                                    <div class="d-flex mb-4">
+                                                        <div class="img">
+                                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="name">John Doe</div>
+                                                            <div class="title">Senior Marketer</div>
+                                                            <div class="ratings">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="./mentor-profile.dashboard.html">
+                                                        <div class="arrow-right">
+                                                            View Profile
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                                                <div class="profile-card-1 con-card">
+                                                    <div class="d-flex mb-4">
+                                                        <div class="img">
+                                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="name">John Doe</div>
+                                                            <div class="title">Senior Marketer</div>
+                                                            <div class="ratings">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="./mentor-profile.dashboard.html">
+                                                        <div class="arrow-right">
+                                                            View Profile
+                                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Button palcement -->
+                                <button class="primary-button px-3" data-bs-dismiss="modal">
+                                    Disable Users
+                                </button>
+                                <button class="secondary-button px-3" data-bs-dismiss="modal">
+                                    Back
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="col-12 col-md-4 col-lg-3 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
+                    <div class="con-sidebar-right">
+
+                        <!-- Profile Section -->
+                        <div class="profile-section">
+                            <div class="profile-header d-flex align-items-center justify-content-between mb-4">
+                                <h2>Profile</h2>
+                                <div class="img profile-dp">
+                                    <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2>Goals attained:</h2>
+                                <h1>
+                                    <span id="goal-done" style="color: #27AE60;">3</span>/
+                                    <span id="goal-total">26</span>
+                                </h1>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2>No. of Mentors:</h2>
+                                <h1 id="number-of-mentor">5</h1>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2>No. of Programmes</h2>
+                                <h1 id="number-of-program">5</h1>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2>Scheduled Meetings:</h2>
+                                <h1 id="schedule-meet">3</h1>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="./admin.users.dashboard.html">
+                                    <button class="primary-button px-3">
+                                        View Profile
+                                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+
+                                <!-- Drop Down -->
+                                <div class="dropdown dropstart">
+                                    <div class="secondary-button" id="gear-setting" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </div>
+
+                                    <ul class="dropdown-menu" aria-labelledby="gear-setting">
+                                        <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="./change-password.html">Change Password</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Task Section -->
+                        <div class="task-section">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h1>
+                                    Tasks (
+                                    <span id="number-of-task">
+                                        12
+                                    </span>
+                                    )
+                                </h1>
+
+                                <div class="secondary-button" data-bs-toggle="modal" data-bs-target="#show-tasks">
+                                    View All
+                                </div>
+                            </div>
+
+                            <div>
+
+                                <div class="task-list">
+                                    <div class="task-card mb-3">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-card mb-3">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-card mb-3">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-card mb-3">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Sidebar -->
+    <div class="con-nav-sidebar d-lg-none">
+        <div class="nav-sidebar">
+            <div class="sidebar">
+
+                <div class="item first">
+                    <ul class="mt-5">
+                        <a href="./overview.dashboard.html">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-gauge"></i>
+                                </div>
+                                Overview
+                            </li>
+                        </a>
+                        <a href="./program.dashboard.html">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                Programmes
+                            </li>
+                        </a>
+                        <a href="./mentor.dashboard.html">
+                            <li class="active">
+                                <div class="icon">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                Mentors
+                            </li>
+                        </a>
+                        <a href="./event.dashboard.html">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </div>
+                                Events
+                            </li>
+                        </a>
+                        <a href="./goals.dashboard.html">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                Goals
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="item second">
+                    <ul class="">
+                        <a href="">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                Logout
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                Change Password
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="con-modal">
+        <div class="modal fade" id="show-tasks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tasks</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="con-row">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row my-lg-4">
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="task-card">
+                                        <div class="title d-flex justify-content-between">
+                                            <p>12 Jan</p>
+                                            <div class="button d-flex align-items-center">Mentor Request</div>
+                                        </div>
+                                        <div class="body mt-1">
+                                            <p>James Okoye sent you a request</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="secondary-button px-3" data-bs-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

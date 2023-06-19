@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/admin-event.css">
+  <title>Mentor Community - My Profile</title>
+</head>
+
+
+<body>
+  <div class="main-container">
+
+    <!-- Navbar -->
+    <div class="main-navbar d-lg-none">
+      <div class="con-navbar d-flex align-items-center justify-content-between px-4">
+
+        <div class="con-menu" id="first-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="con-logo">
+          <div class="icon">
+            <i class="fa-solid fa-m"></i>
+          </div>
+        </div>
+
+        <div class="con-profile">
+          <div class="img profile-dp">
+            <img
+              src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="con-container container">
+      <div class="main-row row">
+
+        <!-- Left Sidebar -->
+        <div class="col-2 d-none d-lg-flex align-items-center justify-content-center">
+          <div class="con-sidebar-left">
+
+            <!-- Header -->
+            <div class="con-logo header d-flex align-items-center justify-content-start">
+              <div class="icon pe-2">
+                <i class="fa-solid fa-m"></i>
+              </div>
+            </div>
+
+            <!-- Navigation List -->
+            <ul class="mt-5">
+              <a href="./admin.overview.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-gauge"></i>
+                  </div>
+                  Overview
+                </li>
+              </a>
+              <a href="./admin.programs.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  Programmes
+                </li>
+              </a>
+              <a href="./admin.users.dashboard.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  Users
+                </li>
+              </a>
+              <a href="./admin.event.dashboard.html">
+                <li class="active">
+                  <div class="icon">
+                    <i class="fa-solid fa-calendar"></i>
+                  </div>
+                  Events
+                </li>
+              </a>
+              <a href="./admin.goals.html">
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  Goals
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="col-12 col-md-8 col-lg-7 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
+          <div class="con-dashboard">
+            <div class="dashboard">
+
+              <!-- Header -->
+              <div class="first d-lg-flex align-items-center gap-5 my-3">
+
+                <a href="./admin.html">
+                  <div class="arrow-left mb-2 mb-lg-0">
+                    <i class="fa-solid fa-arrow-left me-2"></i>
+                    Back
+                  </div>
+                </a>
+
+                <div class="con-breadcrumb">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="./mentor.dashboard.html">Events</a></li>
+
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <div class="con-header d-lg-flex align-items-center justify-content-between flex-wrap">
+                <h1 class="title">
+                  Events
+                </h1>
+
+                <div class="mb-4 mb-lg-0 d-flex flex-wrap">
+
+                  <!-- Dropdown -->
+                  <div class="me-5">
+                    <a href="./user-profile.dashboard.html" data-bs-toggle="modal" data-bs-target="#update-goal">
+                      <button class="primary-button px-3">
+                        <i class="fa-solid fa-plus me-3"></i>
+
+                        Add Events
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="con-search ">
+                    <div class="password-field">
+                      <input type="text" placeholder="Search Events">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dashboard Body -->
+              <div class="dashboard-section">
+
+                <!-- Sections -->
+                <!-- Section A -->
+                <div class="program-section sections">
+
+                  <!-- List -->
+                  <div class="con-program">
+                    <div class="list">
+                      <div class="table-responsive">
+                        <table class="table table-borderless" style="width: max-content;">
+                          <thead>
+                            <tr>
+                              <th scope="col">ID</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Date Published</th>
+                              <th scope="col">Time</th>
+                              <th scope="col">Description</th>
+                              <th scope="col">Action</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>001</td>
+
+                              <td>
+                                <div class="title">Mark hbubbibbdbdd</div>
+                              </td>
+                              <td>24/02/22</td>
+                              <td>10:00AM</td>
+                              <td>
+                                <div class="title">Mark hbubbibbdbdd</div>
+                              </td>
+                              <td>
+                                <div>
+                                  <div class="secondary-button my-0" data-bs-toggle="modal">
+                                    View
+                                  </div>
+                                  <div class="primary-button my-0" id="gear-setting" data-bs-toggle="modal"
+                                    data-bs-target="#delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>002</td>
+                              <td>
+                                <div class="title">Mark hbubbibbdbdd</div>
+                              </td>
+                              <td>24/02/22</td>
+                              <td>10:00AM</td>
+                              <td>
+                                <div class="title">Mark hbubbibbdbdd</div>
+                              </td>
+                              <td>
+                                <div>
+                                  <div class="secondary-button my-0" data-bs-toggle="modal">
+                                    View
+                                  </div>
+                                  <div class="primary-button my-0" id="gear-setting" data-bs-toggle="modal"
+                                    data-bs-target="#delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>003</td>
+                              <td>
+                                <div class="title">Mark hbubbibbdbdd</div>
+                              </td>
+                              <td>24/02/22</td>
+                              <td>10:00AM</td>
+                              <td>
+                                <div class="title">Lorem ipsum dolor sit amet
+                                  consectetur adipisicing elit. Obcaecati, voluptate.
+                                </div>
+                              </td>
+                              <td>
+                                <div>
+                                  <div class="secondary-button my-0" data-bs-toggle="modal">
+                                    View
+                                  </div>
+                                  <div class="primary-button my-0" id="gear-setting" data-bs-toggle="modal"
+                                    data-bs-target="#delete">
+                                    <i class="fa-solid fa-trash" title="delete"></i>
+                                  </div>
+                                </div>
+                              </td>
+
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        <div class="con-pagination mb-5">
+                          <div class="left active">
+                            <div class="double-a dir">
+                              <i class="fa-solid fa-angles-left"></i>
+                            </div>
+                            <div class="single-a dir">
+                              <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                          </div>
+
+                          <div class="con-count d-flex align-items-center justify-content-around">
+                            <p class="count dir active">1</p>
+                            <p class="count dir">2</p>
+                            <p class="count dir">3</p>
+                          </div>
+
+                          <div class="right">
+                            <div class="single-b dir">
+                              <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="double-b dir">
+                              <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div></div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-12 col-md-4 col-lg-3 d-lg-flex align-items-center justify-content-center mb-4 mb-lg-0">
+          <div class="con-sidebar-right">
+
+            <!-- Profile Section -->
+            <div class="profile-section">
+              <div class="profile-header d-flex align-items-center justify-content-between mb-4">
+                <h2>Profile</h2>
+                <div class="img profile-dp">
+                  <img
+                    src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                    alt="">
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>Total No. of Users:</h2>
+                <h1>
+                  <span id="goal-total">26</span>
+                </h1>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Mentees:</h2>
+                <h1 id="number-of-mentor">5</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Mentors:</h2>
+                <h1 id="number-of-mentor">5</h1>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2>No. of Programmes</h2>
+                <h1 id="number-of-program">5</h1>
+              </div>
+
+
+
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="./user-profile.dashboard.html">
+                  <button class="primary-button px-3">
+                    View Profile
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </button>
+                </a>
+
+                <!-- Drop Down -->
+                <div class="dropdown dropstart">
+                  <div class="secondary-button" id="gear-setting" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                  </div>
+
+                  <ul class="dropdown-menu" aria-labelledby="gear-setting">
+                    <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./change-password.html">Change Password</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Task Section -->
+            <div class="task-section">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h1>
+                  Tasks (
+                  <span id="number-of-task">
+                    12
+                  </span>
+                  )
+                </h1>
+
+                <div class="secondary-button" data-bs-toggle="modal" data-bs-target="#show-tasks">
+                  View All
+                </div>
+              </div>
+
+              <div>
+
+                <div class="task-list">
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+
+                  <div class="task-card mb-3">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Sidebar -->
+  <div class="con-nav-sidebar d-lg-none">
+    <div class="nav-sidebar">
+      <div class="sidebar">
+
+        <div class="item first">
+          <ul class="mt-5">
+            <a href="./overview.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-gauge"></i>
+                </div>
+                Overview
+              </li>
+            </a>
+            <a href="./program.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                Programmes
+              </li>
+            </a>
+            <a href="./mentor.dashboard.html">
+              <li class="active">
+                <div class="icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                Mentors
+              </li>
+            </a>
+            <a href="./event.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-calendar"></i>
+                </div>
+                Events
+              </li>
+            </a>
+            <a href="./goals.dashboard.html">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Goals
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="item second">
+          <ul class="">
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Logout
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                Change Password
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="con-modal">
+    <div class="modal fade" id="show-tasks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tasks</h5>
+          </div>
+          <div class="modal-body">
+            <div class="con-row">
+              <div class="row">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row my-lg-4">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <div class="task-card">
+                    <div class="title d-flex justify-content-between">
+                      <p>12 Jan</p>
+                      <div class="button d-flex align-items-center">Mentor Request</div>
+                    </div>
+                    <div class="body mt-1">
+                      <p>James Okoye sent you a request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="secondary-button px-3" data-bs-dismiss="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel">
+            <i class="fa-solid fa-circle-xmark" style="color: #ec0910;"></i>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="first mb-3">
+            <h2>Are you sure you want to delete this Goal?</h2>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="primary-button px-3 mx-2" data-bs-dismiss="modal">
+            No
+          </button>
+          <button class=" secondary-button px-3 mx-2" data-bs-dismiss="modal">
+            Yes, Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Event -->
+  <div class="modal fade" id="update-goal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
+        </div>
+        <div class="modal-body">
+          <div class="con-row">
+            <div>
+              <label for="text-field">Name of Event</label>
+              <div class="text-field" id="text-field">
+                <input type="text" placeholder="Programme 1">
+              </div>
+            </div>
+
+            <div>
+              <label for="text-field">Link to Event</label>
+              <div class="text-field" id="text-field">
+                <input type="text" placeholder="Programme 1">
+              </div>
+            </div>
+
+            <div>
+              <label for="text-field">Description</label>
+              <div class="goal-desc">
+                <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum delectus tenetur repellat blanditiis.</textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer gap-3">
+          <button class="primary-button px-3" data-bs-dismiss="modal">
+            <i class="fa-regular fa-floppy-disk"></i>
+            Save
+          </button>
+
+          <button class="secondary-button px-3" data-bs-dismiss="modal" id="delete-goal-btn">
+            <i class="fa-solid fa-delete-left"></i>
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

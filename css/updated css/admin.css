@@ -1,0 +1,16 @@
+
+/* admin.html */
+.dashboard-section .section-a .con-card {
+    border-radius: 10px;
+    background: #f2f2f2;
+    padding: 24px 2px
+}
+
+.dashboard-section .section-a .con-card h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0c0c0c
+}
+

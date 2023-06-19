@@ -1,0 +1,58 @@
+
+/* goals.dashboard.html */
+.text-field, select.select-field, .password-field, .select-field {
+    width: 100%;
+  }
+  
+  .goal-card {
+    width: 100%;
+    padding: 14px 10px;
+  }
+  .goal-card .status-btn-3.not-start {
+    background: #e02323;
+  }
+  .goal-card .status-btn-3.in-progress {
+    background: #b9b905;
+  }
+  .goal-card .status-btn-3.completed {
+    background: green;
+  }
+  
+  .dropdown-item.active {
+    background-color: #734BBA;
+  }
+  
+  .main-container .con-container .row .con-dashboard .dashboard .con-header .title {
+    margin: 0;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section {
+    height: 80vh;
+    padding: 0 2px;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections {
+    margin-bottom: 50px;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections .goal-card .header .arrow-right, .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections .goal-card .header .arrow-left {
+    cursor: pointer;
+  }
+  .main-container .con-container .row .con-dashboard .dashboard .dashboard-section .sections .list .header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .con-modal #create-goal .modal-dialog, .con-modal #update-goal .modal-dialog {
+    max-width: 460px;
+  }
+  .con-modal #create-goal .modal-title, .con-modal #update-goal .modal-title {
+    font-size: 24px;
+  }
+  .con-modal #create-goal .modal-body .select-field, .con-modal #update-goal .modal-body .select-field {
+    border: 2px solid #e21111;
+  }
+  .con-modal #create-goal .modal-body .goal-desc textarea, .con-modal #update-goal .modal-body .goal-desc textarea {
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 25px 10px;
+  }
+  .con-modal #update-goal .modal-body .select-field {
+    border: 2px solid #FFA51E;
+  }

@@ -1,0 +1,91 @@
+@import  overview.dashboard
+.text-field
+    width: 253px
+.table-responsive
+    .table
+        width: max-content
+        thead
+            tr
+                th
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    padding: 1rem 1.4rem !important
+
+                    color: $primary-color
+.table-responsive
+    .table
+        tbody
+            tr
+                td
+
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: #969696
+                    padding: 1rem 1.4rem !important
+                    .title
+
+                        text-overflow: ellipsis
+                        white-space: nowrap
+                        overflow: hidden
+                        width: 100px
+
+.con-modal
+#create-goal
+    .modal-dialog
+        max-width: 460px
+
+    .modal-title
+        font-size: 24px
+
+    .modal-body
+    .con-row
+        .text-field
+            width: 100%
+    .select-field
+        border: 2px solid #e21111
+
+    .goal-desc
+        textarea
+            border-radius: .5rem
+            width: 100%
+            padding: 25px 10px
+
+#update-goal
+    @extend #create-goal
+
+    .modal-body
+    .select-field
+        border: 2px solid $secondary-color
+
+
+#delete
+    .modal-content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 8px 40px
+      width: 318px
+
+      .modal-body
+        text-align: center
+
+        .first
+          h2
+            font-size: 18px
+
+        .second
+          p
+            font-size: 16px
+
+      .modal-header i
+        color: $primary-color
+        font-size: 3.6rem
+
+      .modal-footer button
+        background: $primary-color
+        color: #fff
